@@ -37,7 +37,7 @@ const FooterSection: React.FC = () => {
                 </div>
             </div>
 
-            <div className="bg-black w-full xl:h-[485px] flex flex-col xl:flex-row px-[80px] py-[60px] text-white">
+            <div className="bg-black w-full xl:h-[485px] flex flex-col xl:flex-row px-[40px] lg:px-[80px] py-[60px] text-white">
                 <div className="flex flex-col">
                     <div className="bg-black py-[15px] px-[6px] mx-auto xl:mx-0">
                         <span className="text-5xl text-white border-white border-[1px] px-[15px] py-[25px] font-bold tracking-wide">
