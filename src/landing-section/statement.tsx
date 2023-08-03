@@ -2,7 +2,7 @@ import { BiPlusMedical } from 'react-icons/bi'
 
 const StatementSection: React.FC = () => {
     return (
-        <div className="w-full bg-white text-center flex flex-col items-center justify-center py-[80px]">
+        <div className="w-full bg-white text-center flex flex-col items-center justify-center py-[80px] px-[40px] lg:px-[80px]">
             <h1 className='text-3xl'>The CEO's opening statement</h1>
 
             <p className='text-lg max-w-[60ch] my-[25px]'>

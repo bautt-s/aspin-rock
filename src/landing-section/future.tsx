@@ -25,7 +25,7 @@ const gridItems = [
 
 const FutureSection: React.FC = () => {
     return (
-        <section className="bg-[#F4F1EB] flex flex-col p-[80px] pb-[200px]">
+        <section className="bg-[#F4F1EB] flex flex-col px-[40px] lg:px-[80px] pt-[80px] pb-[100px] lg:pb-[200px]">
             <div>
                 <p className="max-w-[15ch] font-[600] set-underline tracking-wider text-sm pb-[5px]">INVESTMENTS AT ASPINROCK</p>
 
@@ -37,7 +37,7 @@ const FutureSection: React.FC = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-[25px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[25px]">
                 {gridItems.map((item, index) => 
                     <div key={index} className="bg-white px-[35px] py-[80px] border border-black shadow-xl relative">
                         <h3 className="text-3xl mb-[35px]">{item.title}</h3>

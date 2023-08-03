@@ -19,12 +19,15 @@ const gridItems = [
 
 const ProjectionsSection: React.FC = () => {
     return (
-        <div className="flex flex-col p-[80px] bg-black text-white">
+        <div className="flex flex-col px-[40px] lg:px-[80px] py-[80px] bg-black text-white">
             <p className="max-w-[15ch] font-[600] set-underline tracking-wider text-sm pb-[5px]">OUR PROJECTIONS</p>
 
-            <h1 className="text-[56px] mt-[25px] mb-[60px]">The year ahead: 2023-2024 projections</h1>
+            <h1 className="text-5xl leading-[60px] lg:leading-normal lg:text-[56px] mt-[45px] lg:mt-[25px]
+            max-w-[10ch] sm:max-w-none text-center mx-auto lg:text-left lg:mx-0 mb-[60px]">
+                The year ahead: 2023-2024 projections
+            </h1>
 
-            <div className="grid grid-cols-2 w-fit mx-auto gap-y-[60px] gap-x-[240px]">
+            <div className="grid grid-cols-2 w-fit mx-auto gap-y-[60px] gap-x-[40px] lg:gap-x-[240px]">
                 {gridItems.map((item, index) =>
                     <div key={index} className="flex flex-col">
                         <h4 className="text-2xl font-[500]">{item.title}</h4>
