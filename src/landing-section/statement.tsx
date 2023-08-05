@@ -14,7 +14,7 @@ const StatementSection: React.FC = () => {
 
             <button className="flex flex-row items-center">
                 <BiPlusMedical className='text-[#1DA1F2]' />
-                <span className='underline ml-[15px]'>Read more</span>
+                <span className='ml-[15px]'>Read more</span>
             </button>
         </div>
     )

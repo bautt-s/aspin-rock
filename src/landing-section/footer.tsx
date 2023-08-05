@@ -1,7 +1,7 @@
 const FooterSection: React.FC = () => {
     return (
         <footer className="flex flex-col">
-            <div className="w-full xl:h-[500px] bg-[#161616] text-white px-[80px] py-[40px]">
+            <div className="w-full xl:h-[500px] bg-[#161616] text-white px-[40px] lg:px-[80px] py-[40px]">
                 <h2 className="text-3xl md:text-4xl text-center md:text-left">Continue to Explore</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 mt-[40px] gap-y-[60px] md:gap-y-0 md:gap-x-[60px] xl:gap-x-[240px]">

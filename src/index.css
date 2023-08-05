@@ -40,3 +40,28 @@ body {
     background-image: url('./static/hero-img.png');
     background-size: cover;
 }
+
+.hero-img-2 {
+    background-image: url('./static/hero-img2.png');
+    background-size: cover;
+}
+.hero-img-3 {
+    background-image: url('./static/hero-img3.png');
+    background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1DA1F2;
+    border-radius: 999px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1d97e2;
+}
