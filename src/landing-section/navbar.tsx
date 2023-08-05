@@ -29,14 +29,17 @@ const NavSection: React.FC<ViewProps> = (props) => {
                 </ul>
             </div>
 
-            <div className="bg-black w-full h-[100px] text-white justify-center flex flex-col px-[20px] 
-            md:px-[40px] lg:px-[80px] text-center md:text-left">
-                <span className="max-w-[23ch] mx-auto sm:max-w-none sm:mx-0 sm:text-lg">
-                    You are in the AspinRock site for {view} investors.
-                </span>
+            {view !== 'institutional' && 
+                <div className="bg-black w-full h-[100px] text-white justify-center flex flex-col px-[20px] 
+                md:px-[40px] lg:px-[80px] text-center md:text-left">
+                    <span className="max-w-[23ch] mx-auto sm:max-w-none sm:mx-0 sm:text-lg">
+                        {view === 'individual' ? 'You are in the AspinRock site for individual investors.'
+                        : 'You are in the AspinRock site for advisors.'}
+                    </span>
 
-                <p className="text-xs sm:text-sm mt-[5px] sm:mt-0">Not an {view}? Change your user type above.</p>
-            </div>
+                    <p className="text-xs sm:text-sm mt-[5px] sm:mt-0">Not an {view}? Change your user type above.</p>
+                </div>
+            }
 
             <div className="bg-white w-full sm:h-[70px] flex flex-col sm:flex-row items-center 
             px-[20px] md:px-[40px] lg:px-[80px] justify-center md:justify-normal py-[10px] sm:py-0">

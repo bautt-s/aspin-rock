@@ -4,6 +4,8 @@ import FutureSection from "./future"
 import HelpSection from "./help"
 import HeroSection from "./hero"
 import HeroInstitutional from "./hero-inst"
+import InstLinks from "./inst-links"
+import InstVision from "./inst-vision"
 import LatestSection from "./latest"
 import NavSection from "./navbar"
 import ProjectionsSection from "./projections"
@@ -22,12 +24,14 @@ const Landing: React.FC<ViewProps> = (props) => {
             
             {view === 'institutional' && <HeroInstitutional />}
             {view !== 'institutional' && <HeroSection view={view} />}
+            {view === 'institutional' && <InstLinks />}
             {view === 'advisor' && <HelpSection />}
             {view !== 'advisor' && <FutureSection />}
             {view !== 'institutional' && <StatementSection />}
             {view === 'advisor' && <AdvisorSection />}
             {view === 'individual' && <ProjectionsSection />}
             {view === 'individual' && <LatestSection />}
+            {view === 'institutional' && <InstVision />}
 
             <FooterSection />
         </div>

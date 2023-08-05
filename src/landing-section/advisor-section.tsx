@@ -34,7 +34,7 @@ const AdvisorSection: React.FC = () => {
 
                 <button className="flex flex-row items-center w-fit mt-[40px] mx-auto md:mx-0">
                     <BiPlusMedical className='text-[#1DA1F2]' />
-                    <span className='ml-[15px] underline'>Learn more about what AspinRock can do </span>
+                    <span className='ml-[15px]'>Learn more about what AspinRock can do </span>
                 </button>
             </div>
 
@@ -71,7 +71,7 @@ const AdvisorSection: React.FC = () => {
 
             <div className='bg-black px-[40px] xl:px-[80px] text-white py-[40px]'>
                 <h1 className='text-3xl'>Subscribe for the latest market insights and trends</h1>
-                <p className='max-w-[60ch] mt-[15px]'>Get the latest on markets from BlackRock thought leaders including our model portfolio managers.</p>
+                <p className='max-w-[60ch] mt-[15px]'>Get the latest info on markets from AspinRock.</p>
 
                 <form className='mt-[25px]'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[25px]'>

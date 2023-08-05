@@ -35,7 +35,7 @@ const gridItemsAdvisor = [
     },
     {
         subtitle: 'Q2 2023 EQUITY MARKET OUTLOOK',
-        title: 'Equity CIO Tony DeSpirito offers 3 ideas for quality amid uncertainty.',
+        title: 'Learn about what the future has to offer.',
         cta: 'Explore the outlook'
     }
 ]

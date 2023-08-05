@@ -15,7 +15,7 @@ const HelpSection: React.FC = () => {
 
                 <button className="flex flex-row items-center w-fit mt-[40px]">
                     <BiPlusMedical className='text-[#1DA1F2]' />
-                    <span className='ml-[15px] underline'>Learn more about what AspinRock can do </span>
+                    <span className='ml-[15px]'>Learn more about what AspinRock can do </span>
                 </button>
             </div>
 
