@@ -81,12 +81,12 @@ const LatestSection: React.FC = () => {
 
                         <li className='flex flex-row items-center border-y-[1px] border-black py-[15px]'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            How to plan for retirement
+                            Recent Regulatory Developments
                         </li>
 
                         <li className='flex flex-row items-center'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            Prepare a College savings plan
+                            Embracing Transparency and Accountability
                         </li>
                     </ul>
                 </div>

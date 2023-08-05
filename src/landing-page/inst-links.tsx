@@ -7,7 +7,7 @@ const gridItems = [
         description: "Trading has always been a fast-paced industry, and quantum computing is making it even faster. In this article, we'll explore how quantum computing is being used in trading, including its ability to analyze real-time data and execute trades with lightning-fast speed and accuracy. Join us in discovering how this game-changing technology is revolutionizing the way we trade."
     },
     {
-        title: 'The Future of Finance: The Future of Finance',
+        title: 'The Future of Finance: Get in touch with tomorrow',
         date: 'May 8, 2023 | By AspinRock',
         description: 'As quantum computing becomes more prevalent in the finance industry, this article delves into its potential impact on the market, including its ability to increase efficiency, reduce risk, and transform investment strategies. Join us in exploring how quantum computing is reshaping the future of finance.'
     },

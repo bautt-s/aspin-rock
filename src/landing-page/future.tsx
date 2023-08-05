@@ -47,7 +47,7 @@ const FutureSection: React.FC = () => {
 
                         <button className="absolute bottom-0 left-0 flex flex-row items-center bg-black py-[10px] pl-[15px] pr-[35px]">
                             <BiPlusMedical className='text-[#1DA1F2]' />
-                            <span className='underline text-white ml-[15px]'>{item.title}</span>
+                            <span className='text-white ml-[15px]'>{item.title}</span>
                         </button>
                     </div>
                 )}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const FooterSection: React.FC = () => {
     return (
         <footer className="flex flex-col">
@@ -11,8 +13,7 @@ const FooterSection: React.FC = () => {
                         <ul className="flex flex-col text-sm md:gap-y-[20px] mt-[25px]">
                             <li>Investment Management and Advisory</li>
                             <li>Private Equity</li>
-                            <li>Asset Management </li>
-                            <li>Risk Management </li>
+                            <li>Mergers and Acquisitions</li>
                         </ul>
                     </div>
 
@@ -59,18 +60,26 @@ const FooterSection: React.FC = () => {
                         <li>Careers</li>
                         <li>Newsroom</li>
                         <li>Investor Relations</li>
-                        <li>Contact Us</li>
-                        <li>Accessibility</li>
+                        <li className="hover:underline">
+                            <Link to='/contact-us'>Contact Us</Link>
+                        </li>
+                        <li className="hover:underline">
+                            <Link to='/accessibility'>Accessibility</Link>
+                        </li>
                         <li>Disclosure</li>
                     </ul>
 
                     <ul className="flex flex-col gap-y-[15px] ml-auto md:ml-0 xl:ml-[85px] 2xl:ml-[170px]">
                         <li className="text-[#1DA1F2]">LEGAL</li>
-                        <li>Terms & Conditions</li>
+                        <li className="hover:underline">
+                            <Link to='/disclosures'>Terms & Conditions</Link>
+                        </li>
                         <li>Privacy Policy</li>
                         <li>Continuity</li>
                         <li>FINRA BrokerCheck</li>
-                        <li>606 Disclosure</li>
+                        <li className="hover:underline">
+                            <Link to='/606'>606 Disclosure</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

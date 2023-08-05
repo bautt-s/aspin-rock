@@ -1,6 +1,5 @@
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BiSolidChevronRight, BiPlusMedical } from 'react-icons/bi'
-import { ViewProps } from './landing-ind'
 
 const heroImg = require('../static/hero-img.png')
 
@@ -40,7 +39,7 @@ const gridItemsAdvisor = [
     }
 ]
 
-const HeroSection: React.FC<ViewProps> = (props) => {
+const HeroSection: React.FC<{ view: string }> = (props) => {
     const { view } = props
 
     return (

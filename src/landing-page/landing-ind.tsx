@@ -10,6 +10,7 @@ import LatestSection from "./latest"
 import NavSection from "./navbar"
 import ProjectionsSection from "./projections"
 import StatementSection from "./statement"
+import { useState, useEffect } from 'react'
 
 export type ViewProps = {
     view: 'individual' | 'advisor' | 'institutional'
@@ -18,9 +19,15 @@ export type ViewProps = {
 const Landing: React.FC<ViewProps> = (props) => {
     const { view } = props
 
+    const [mode, setMode] = useState<'individual' | 'advisor' | 'institutional'>(view)
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0 })
+    }, [])
+
     return (
         <div className="overflow-hidden">
-            <NavSection view={view} />
+            <NavSection view={mode} setView={setMode} />
             
             {view === 'institutional' && <HeroInstitutional />}
             {view !== 'institutional' && <HeroSection view={view} />}
