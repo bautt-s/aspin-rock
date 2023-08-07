@@ -1,4 +1,5 @@
 import { BiPlusMedical } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const StatementSection: React.FC = () => {
     return (
@@ -14,7 +15,7 @@ const StatementSection: React.FC = () => {
 
             <button className="flex flex-row items-center">
                 <BiPlusMedical className='text-[#1DA1F2]' />
-                <span className='ml-[15px]'>Read more</span>
+                <Link to='/letter-ceo' className='ml-[15px]'>Read more</Link>
             </button>
         </div>
     )

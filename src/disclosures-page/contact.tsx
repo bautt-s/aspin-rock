@@ -14,7 +14,7 @@ const ContactPage: React.FC = () => {
             <div className="flex flex-col">
                 <div className="h-[250px] bg-[#1DA1F2] w-full flex flex-col justify-center text-white px-[40px] lg:px-[80px]">
                     <span className='text-xs mb-[25px]'>WE’RE HERE FOR YOU</span>
-                    <h1 className="text-5xl md:text-6xl">World Class Customer Serivce</h1>
+                    <h1 className="text-5xl md:text-6xl">World Class Customer Service</h1>
                 </div>
 
                 <form className="bg-white px-[40px] lg:px-[80px] pt-[40px] pb-[160px]">

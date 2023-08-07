@@ -11,7 +11,9 @@ const FooterSection: React.FC = () => {
                         <h4 className="border-b-[1px] border-white pb-[15px]">Services</h4>
 
                         <ul className="flex flex-col text-sm md:gap-y-[20px] mt-[25px]">
-                            <li>Investment Management and Advisory</li>
+                            <li className="hover:underline">
+                                <Link to='/risk-and-asset'>Investment Management and Advisory</Link>
+                            </li>
                             <li>Private Equity</li>
                             <li>Mergers and Acquisitions</li>
                         </ul>
@@ -57,26 +59,29 @@ const FooterSection: React.FC = () => {
                 <div className="grid grid-cols-2 text-sm xl:ml-[120px] 2xl:ml-[240px] mt-[60px] md:mx-auto md:gap-x-[240px] xl:mx-0 xl:gap-x-0">
                     <ul className="flex flex-col gap-y-[15px]">
                         <li className="text-[#1DA1F2]">CORPORATE</li>
-                        <li>Careers</li>
-                        <li>Newsroom</li>
-                        <li>Investor Relations</li>
+                        <li className="hover:underline">
+                            <Link to='/careers'>Careers</Link>
+                        </li>
                         <li className="hover:underline">
                             <Link to='/contact-us'>Contact Us</Link>
                         </li>
                         <li className="hover:underline">
                             <Link to='/accessibility'>Accessibility</Link>
                         </li>
-                        <li>Disclosure</li>
                     </ul>
 
                     <ul className="flex flex-col gap-y-[15px] ml-auto md:ml-0 xl:ml-[85px] 2xl:ml-[170px]">
                         <li className="text-[#1DA1F2]">LEGAL</li>
                         <li className="hover:underline">
-                            <Link to='/disclosures'>Terms & Conditions</Link>
+                            <Link to='/terms-and-conditions'>Terms & Conditions</Link>
                         </li>
-                        <li>Privacy Policy</li>
+                        <li className="hover:underline">
+                            <Link to='/privacy'>Privacy Policy</Link>
+                        </li>
                         <li>Continuity</li>
-                        <li>FINRA BrokerCheck</li>
+                        <li className="hover:underline">
+                            <a href='https://brokercheck.finra.org/' target="_blank">FINRA BrokerCheck</a>
+                            </li>
                         <li className="hover:underline">
                             <Link to='/606'>606 Disclosure</Link>
                         </li>

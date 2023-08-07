@@ -1,5 +1,6 @@
 import { BsTwitter } from 'react-icons/bs'
 import { BiPlusMedical } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const tweetImg1 = require('../static/tweet-1.png')
 const tweetImg2 = require('../static/tweet-2.png')
@@ -70,13 +71,13 @@ const LatestSection: React.FC = () => {
                     </button>
                 </div>
 
-                <div className='xl:ml-auto px-[20px] py-[25px] h-fit h-auto 2xl:h-fit w-full xl:w-[40%] mt-[60px] xl:mt-0 shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)]'>
+                <div className='xl:ml-auto px-[20px] py-[25px] h-fit 2xl:h-fit w-full xl:w-[40%] mt-[60px] xl:mt-0 shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)]'>
                     <span className='text-sm'>READ OUR BLOG</span>
 
                     <ul className='flex flex-col mt-[35px] gap-y-[20px]'>
                         <li className='flex flex-row items-center'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            Opening Statement
+                            <Link to='/letter-ceo'>Opening Statement</Link>
                         </li>
 
                         <li className='flex flex-row items-center border-y-[1px] border-black py-[15px]'>
