@@ -1,6 +1,6 @@
 import { BiSolidChevronRight } from 'react-icons/bi'
 
-const institutionalVision = require('../static/institutional-vision.png')
+const institutionalVision = require('../../static/institutional-vision.png')
 
 const InstVision: React.FC = () => {
     function scrollToSection() {

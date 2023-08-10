@@ -9,7 +9,7 @@ const DisclosuresPage: React.FC = () => {
 
     return (
         <div>
-            <NavSection view='institutional' />
+            <NavSection />
 
             <div className="relative pb-[300px] pt-[100px] flex justify-center items-center">
                 <div className="bg-[#1DA1F2] w-full h-[200px] absolute top-0 left-0 z-10"></div>

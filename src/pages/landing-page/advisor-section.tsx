@@ -1,6 +1,6 @@
 import { BiSolidChevronRight, BiPlusMedical } from 'react-icons/bi'
 
-const moneyTalks = require('../static/money-talks.png')
+const moneyTalks = require('../../static/money-talks.png')
 
 const gridItems = [
     {

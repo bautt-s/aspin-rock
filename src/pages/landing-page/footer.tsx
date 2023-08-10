@@ -14,8 +14,12 @@ const FooterSection: React.FC = () => {
                             <li className="hover:underline">
                                 <Link to='/risk-and-asset'>Investment Management and Advisory</Link>
                             </li>
-                            <li>Private Equity</li>
-                            <li>Mergers and Acquisitions</li>
+                            <li className="hover:underline">
+                                <Link to='/equity'>Private Equity</Link>
+                            </li>
+                            <li className="hover:underline">
+                                <Link to='/mergers-and-acquisitions'>Mergers and Acquisitions</Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -78,7 +82,6 @@ const FooterSection: React.FC = () => {
                         <li className="hover:underline">
                             <Link to='/privacy'>Privacy Policy</Link>
                         </li>
-                        <li>Continuity</li>
                         <li className="hover:underline">
                             <a href='https://brokercheck.finra.org/' target="_blank">FINRA BrokerCheck</a>
                             </li>

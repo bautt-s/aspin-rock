@@ -2,8 +2,8 @@ import FooterSection from "../landing-page/footer"
 import NavSection from "../landing-page/navbar"
 import { useEffect } from 'react'
 
-const imageRA = require('../static/risk-asset.png')
-const imageRA2 = require('../static/risk-asset-2.png')
+const imageRA = require('../../static/risk-asset.png')
+const imageRA2 = require('../../static/risk-asset-2.png')
 
 const RiskAssetPage: React.FC = () => {
     useEffect(() => {
@@ -12,7 +12,7 @@ const RiskAssetPage: React.FC = () => {
 
     return (
         <div>
-            <NavSection view='institutional' />
+            <NavSection />
 
             <div className="flex flex-col">
                 <img src={imageRA} className="w-full h-[400px] xl:h-[800px] object-cover object-top" />

@@ -2,9 +2,9 @@ import { BsTwitter } from 'react-icons/bs'
 import { BiPlusMedical } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
-const tweetImg1 = require('../static/tweet-1.png')
-const tweetImg2 = require('../static/tweet-2.png')
-const tweetImg3 = require('../static/tweet-3.png')
+const tweetImg1 = require('../../static/tweet-1.png')
+const tweetImg2 = require('../../static/tweet-2.png')
+const tweetImg3 = require('../../static/tweet-3.png')
 
 const LatestSection: React.FC = () => {
     return (

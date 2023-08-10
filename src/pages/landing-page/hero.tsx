@@ -1,7 +1,9 @@
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BiSolidChevronRight, BiPlusMedical } from 'react-icons/bi'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../store/store'
 
-const heroImg = require('../static/hero-img.png')
+const heroImg = require('../../static/hero-img.png')
 
 const gridItemsIndividual = [
     {
@@ -39,8 +41,8 @@ const gridItemsAdvisor = [
     }
 ]
 
-const HeroSection: React.FC<{ view: string }> = (props) => {
-    const { view } = props
+const HeroSection: React.FC = () => {
+    const view = useSelector((state: RootState) => state.app.view)
 
     return (
         <div className="w-full">

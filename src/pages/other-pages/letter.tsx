@@ -9,7 +9,7 @@ const LetterPage: React.FC = () => {
 
     return (
         <div>
-            <NavSection view='institutional' />
+            <NavSection />
 
             <div className="flex flex-col">
                 <div className="h-[250px] bg-[#1DA1F2] w-full"></div>

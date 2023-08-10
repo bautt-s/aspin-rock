@@ -3,8 +3,8 @@ import FooterSection from "../landing-page/footer"
 import NavSection from "../landing-page/navbar"
 import { useEffect } from 'react'
 
-const careersImg1 = require('../static/careers-1.png')
-const careersImg3 = require('../static/careers-3.png')
+const careersImg1 = require('../../static/careers-1.png')
+const careersImg3 = require('../../static/careers-3.png')
 
 const CareersPage: React.FC = () => {
     useEffect(() => {
@@ -13,7 +13,7 @@ const CareersPage: React.FC = () => {
 
     return (
         <div>
-            <NavSection view='institutional' />
+            <NavSection />
 
             <div className="flex flex-col bg-black justify-center items-center text-white px-[40px] lg:px-[80px] pt-[80px] pb-[120px]">
                 <h1 className="text-5xl md:text-6xl text-center">Careers with us</h1>

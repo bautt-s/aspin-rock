@@ -10,27 +10,28 @@ import LatestSection from "./latest"
 import NavSection from "./navbar"
 import ProjectionsSection from "./projections"
 import StatementSection from "./statement"
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import type { RootState } from '../../store/store'
+import { useLocation, useNavigate } from "react-router-dom"
 
-export type ViewProps = {
-    view: 'individual' | 'advisor' | 'institutional'
-}
+const Landing: React.FC = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
 
-const Landing: React.FC<ViewProps> = (props) => {
-    const { view } = props
-
-    const [mode, setMode] = useState<'individual' | 'advisor' | 'institutional'>(view)
+    const view = useSelector((state: RootState) => state.app.view)
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0 })
+        if (location.pathname !== `/${view}`) navigate(`/${view}`)
     }, [])
 
     return (
         <div className="overflow-hidden">
-            <NavSection view={mode} setView={setMode} />
+            <NavSection />
             
             {view === 'institutional' && <HeroInstitutional />}
-            {view !== 'institutional' && <HeroSection view={view} />}
+            {view !== 'institutional' && <HeroSection />}
             {view === 'institutional' && <InstLinks />}
             {view === 'advisor' && <HelpSection />}
             {view !== 'advisor' && <FutureSection />}
