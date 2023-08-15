@@ -12,8 +12,8 @@ const TermsPage: React.FC = () => {
 
             <div className='bg-white px-[40px] lg:px-[80px] pb-[140px] pt-[40px] flex flex-col gap-y-[40px] max-w-[94ch]'>
                 <p>
-                    Please carefully review these Terms and Conditions ("Terms") prior to using the services outlined in
-                    this document. By accessing the website found at www.aspinrock.com ("Website"), you acknowledge
+                    Please carefully review these Terms and Conditions (&quot;Terms&quot;) prior to using the services outlined in
+                    this document. By accessing the website found at www.aspinrock.com (&quot;Website&quot;), you acknowledge
                     that you have read and understood these Terms and agree to comply with them. If you do not agree
                     to all the terms and conditions stated in this agreement, you are not authorized to use these
                     services, and it is advised that you refrain from using this website.
@@ -32,7 +32,7 @@ const TermsPage: React.FC = () => {
                 <p>
                     Nothing found on this Website should be considered as tax, accounting, regulatory, legal, insurance,
                     or investment advice. The information and opinions presented on this Website do not constitute a
-                    solicitation or offer by AspinRock, Inc. ("AspinRock") or its affiliates to buy or sell any securities,
+                    solicitation or offer by AspinRock, Inc. (&quot;AspinRock&quot;) or its affiliates to buy or sell any securities,
                     futures, options, or other financial instruments. Furthermore, the offer or sale of such securities would
                     be unlawful in any jurisdiction where such solicitation, offer, purchase, or sale violates the securities
                     laws. The visitor acknowledges that any decisions made based on the information provided on this
@@ -77,7 +77,7 @@ const TermsPage: React.FC = () => {
                 </p>
 
                 <p>
-                    The information and services provided on this Website are offered "AS IS" and without any
+                    The information and services provided on this Website are offered &quot;AS IS&quot; and without any
                     warranties, whether expressed or implied, by AspinRock. To the maximum extent permitted by
                     applicable law, AspinRock disclaims all warranties, including but not limited to, any warranty of non-
                     infringement of third-party rights and any implied warranties of merchantability and fitness for a
@@ -155,7 +155,7 @@ const TermsPage: React.FC = () => {
                     containing confidential information to AspinRock by mail. AspinRock retains the freedom to utilize any
                     ideas, concepts, know-how, or techniques provided by a website user through this website for any
                     purpose. You acknowledge and agree that AspinRock has granted you limited access to specific files
-                    related to the AspinRock Funds ("Approved Files"), and you agree not to attempt to access computer
+                    related to the AspinRock Funds (&quot;Approved Files&quot;), and you agree not to attempt to access computer
                     files other than the Approved Files. AspinRock does not provide any warranty regarding the security
                     of the website, including the unauthorized access to information transmitted or received through the
                     website. AspinRock reserves the right to discontinue or modify the provision of this website and its
@@ -177,7 +177,7 @@ const TermsPage: React.FC = () => {
                     Financial professionals who successfully complete the registration process to access the AspinRock
                     Financial Professional website are simultaneously granting permission to AspinRock to send them
                     email messages for marketing and general communication purposes to the email address provided.
-                    This service can be terminated at any time by responding to the email with "Unsubscribe" in the
+                    This service can be terminated at any time by responding to the email with &quot;Unsubscribe&quot; in the
                     subject line.
                 </p>
 
@@ -225,7 +225,7 @@ const TermsPage: React.FC = () => {
 
                 <p>
                     As a broker-dealer, AspinRock Inc. and/or its affiliates (including any entities that qualify as
-                    "affiliates" as defined in the Investment Company Act of 1940) may act as a principal for its own
+                    &quot;affiliates&quot; as defined in the Investment Company Act of 1940) may act as a principal for its own
                     account or as an agent for its customers when it comes to the sale to you or purchase by you of a
                     security that is the subject of content prepared by AspinRock. If it receives a mark-up or
                     commission or acts as an agent for another person in connection with such a transaction, AspinRock
@@ -253,7 +253,7 @@ const TermsPage: React.FC = () => {
                     AspinRock or any network connected to such servers. It&apos;s important to note that all servers have
                     limited capacity and are shared by numerous users.<br />
                     Use this Website in any manner that would interfere with another party&apos;s use of the Website. <br />
-                    Include the term "AspinRock," or any trademark of AspinRock or the name of any executive
+                    Include the term &quot;AspinRock&quot;, or any trademark of AspinRock or the name of any executive
                     affiliated with AspinRock, or any variation thereof, as a meta-tag or hidden textual
                     element.<br />
                     Utilize any robot, spider, intelligent agent, or other automated or manual method to search,
