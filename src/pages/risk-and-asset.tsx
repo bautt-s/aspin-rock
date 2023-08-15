@@ -74,10 +74,10 @@ const RiskAssetPage: React.FC = () => {
 
                 <div className="bg-black flex flex-col p-[40px] lg:p-[80px] text-white">
                     <p className="text-2xl max-w-[105ch]">
-                        "Investment management and advisory is a symphony, blending various instruments of financial assets into a harmonious portfolio. It&apos;s a
+                    &quot;Investment management and advisory is a symphony, blending various instruments of financial assets into a harmonious portfolio. It&apos;s a
                         dance with risk and reward, where strategic foresight leads the way, and the market noise fades into the background. Embrace this
                         rhythm, be patient in your endeavors, and persistently fine-tune your financial orchestra. Remember, the maestro of this symphony is
-                        not one who merely plays the notes, but who understands the music and brings it to life for their clients&apos; prosperity"
+                        not one who merely plays the notes, but who understands the music and brings it to life for their clients&apos; prosperity&quot;
                     </p>
 
                     <span className="text-lg mt-[40px]">Jordan Robinson, Founder and CEO</span>

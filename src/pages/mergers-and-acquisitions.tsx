@@ -68,11 +68,11 @@ const MergersPage: React.FC = () => {
 
                 <div className="bg-black flex flex-col px-[40px] lg:px-[80px] text-white py-[80px]">
                     <p className="font-[500] text-xl lg:text-2xl max-w-[100ch] text-center mx-auto">
-                        "Embarking on the voyage of mergers and acquisitions is akin to exploring uncharted skies. 
+                    &quot;Embarking on the voyage of mergers and acquisitions is akin to exploring uncharted skies. 
                         It&apos;s a vast horizon, brimming with possibilities and complexities, but it&apos;s the daring pioneers 
                         who venture forth that redefine the corporate landscape. So, take flight, let your vision lead the way, 
                         and embrace the thrilling dance of synergy and transformation. For in the end, it&apos;s not merely soaring, 
-                        but conquering turbulence and charting a course towards unparalleled prosperity."
+                        but conquering turbulence and charting a course towards unparalleled prosperity.&quot;
                     </p>
 
                     <span className="font-[500] text-lg mt-[40px] mx-auto">Jordan Robinson, Founder and CEO</span>
