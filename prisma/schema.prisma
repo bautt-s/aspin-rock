@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Article {
+    id          String @id @default(uuid()) @map("_id") 
+    title       String
+    date        DateTime @default(now())
+    content     String
+    image       String
+    media       String[]
+    category    String
+}
+
+model Update {
+    id          String @id @default(uuid()) @map("_id") 
+    title       String
+    date        DateTime @default(now())
+    content     String
+    image       String
+    media       String[]
+    category    String
+}
