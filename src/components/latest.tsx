@@ -59,9 +59,9 @@ const LatestSection: React.FC = () => {
 
                     <p className='max-w-[90ch] xl:max-w-[60ch] 2xl:max-w-[80ch]'>
                         As a financial services company, we recognize that our success is directly tied to the success and satisfaction of our stakeholders.
-                        That's why we're committed to putting you at the forefront of everything we do.
-                        Whether you're an investor looking to grow your wealth, a small business owner seeking
-                        financing options, or simply someone looking for sound financial advice, we're here to help.
+                        That&apos;s why we&apos;re committed to putting you at the forefront of everything we do.
+                        Whether you&apos;re an investor looking to grow your wealth, a small business owner seeking
+                        financing options, or simply someone looking for sound financial advice, we&apos;re here to help.
                     </p>
 
                     <button className='flex flex-row mt-[20px] items-center gap-x-[10px]'>

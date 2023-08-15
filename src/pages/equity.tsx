@@ -56,7 +56,7 @@ const EquityPage: React.FC = () => {
                                 <p className="max-w-[43ch] font-[300] mt-[15px] mx-auto lg:mx-0">
                                     When we form a partnership with a business, our aim is to build it
                                     with enduring resilience. Our robustness, derived from the
-                                    extensive and diverse platform we've developed over three and a
+                                    extensive and diverse platform we&apos;ve developed over three and a
                                     half decades, equips our companies to navigate market
                                     fluctuations and achieve long-term success.
                                 </p>
@@ -70,7 +70,7 @@ const EquityPage: React.FC = () => {
 
                 <div className="bg-black flex flex-col px-[40px] lg:px-[80px] text-white py-[80px]">
                     <p className="font-[500] text-xl lg:text-2xl max-w-[100ch] text-center mx-auto">
-                        "Venturing into the realms of private equity is akin to boarding a ship destined for uncharted territories. It's a vast ocean, teeming with
+                        "Venturing into the realms of private equity is akin to boarding a ship destined for uncharted territories. It&apos;s a vast ocean, teeming with
                         opportunities and fraught with challenges, yet it is the brave who embark on this journey that reshape the financial world. So, seize the
                         helm, let your strategic acumen guide you, and embrace the exhilarating dance of risk and reward. For in the end, it is not about simply
                         sailing, but about mastering the storm and navigating towards unprecedented wealth creation."

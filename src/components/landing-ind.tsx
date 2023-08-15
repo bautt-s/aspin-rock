@@ -21,7 +21,7 @@ const Landing: React.FC = () => {
 
     useEffect(() => {
         if (router.pathname !== `/${view}`) router.push(`/${view}`)
-    }, [])
+    })
 
     return (
         <div className="overflow-hidden">

@@ -32,7 +32,7 @@ const FutureSection: React.FC = () => {
                 <h1 className="text-6xl my-[40px]">Build Your Future with Expert Investments</h1>
 
                 <p className="text-lg max-w-[100ch] mb-[80px]">
-                    Investing can be a daunting task, but it's an important part of securing a financial future. 
+                    Investing can be a daunting task, but it&apos;s an important part of securing a financial future. 
                     At our AspinRock, we offer expert investment services to institutions that can help companies make informed decisions about their investment portfolios.
                 </p>
             </div>

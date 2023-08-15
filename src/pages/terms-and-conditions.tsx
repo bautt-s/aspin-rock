@@ -38,7 +38,7 @@ const TermsPage: React.FC = () => {
                     laws. The visitor acknowledges that any decisions made based on the information provided on this
                     Website are solely their own responsibility. By using this Website, the visitor agrees to indemnify and
                     hold AspinRock, its officers, directors, employees, affiliates, agents, licensors, and suppliers harmless
-                    from any claims, losses, liability, costs, and expenses (including attorney's fees) arising from their use
+                    from any claims, losses, liability, costs, and expenses (including attorney&apos;s fees) arising from their use
                     of this Website, their violation of these Terms, or any decisions made based on the information
                     provided.
                 </p>
@@ -101,7 +101,7 @@ const TermsPage: React.FC = () => {
                     preserve all copyright and other proprietary notices included in the materials. Without written
                     permission from AspinRock, you may not distribute, modify, transmit, reuse, repost, or use the
                     content of this website for public or commercial purposes, including all text, images, audio, and video.
-                    Engaging in any other purpose or modification of the materials would infringe upon AspinRock's
+                    Engaging in any other purpose or modification of the materials would infringe upon AspinRock&apos;s
                     intellectual property rights.
                 </p>
 
@@ -141,8 +141,8 @@ const TermsPage: React.FC = () => {
                     You are not permitted to display hyperlinks on your websites to any website owned or operated by
                     AspinRock. If you wish to display a hyperlink to an AspinRock website on your own website, you
                     must enter into a written agreement with AspinRock that governs such display. Accessing any
-                    AspinRock website does not grant you the right to use any of AspinRock's names, logos, trademarks,
-                    or copyrighted material, and you agree not to do so without AspinRock's explicit written consent. To
+                    AspinRock website does not grant you the right to use any of AspinRock&apos;s names, logos, trademarks,
+                    or copyrighted material, and you agree not to do so without AspinRock&apos;s explicit written consent. To
                     request permission to display hyperlinks on your websites to AspinRock websites, please send an
                     email to webmaster@aspinrock.com.
                 </p>
@@ -221,7 +221,7 @@ const TermsPage: React.FC = () => {
                     may not apply to you.
                 </p>
 
-                <h4 className='font-[600]'>Broker-Dealer's Potential Conflicts</h4>
+                <h4 className='font-[600]'>Broker-Dealer&apos;s Potential Conflicts</h4>
 
                 <p>
                     As a broker-dealer, AspinRock Inc. and/or its affiliates (including any entities that qualify as
@@ -250,9 +250,9 @@ const TermsPage: React.FC = () => {
 
                 <p>
                     Use this website in any way that could potentially harm or overload any server belonging to
-                    AspinRock or any network connected to such servers. It's important to note that all servers have
+                    AspinRock or any network connected to such servers. It&apos;s important to note that all servers have
                     limited capacity and are shared by numerous users.<br />
-                    Use this Website in any manner that would interfere with another party's use of the Website. <br />
+                    Use this Website in any manner that would interfere with another party&apos;s use of the Website. <br />
                     Include the term "AspinRock," or any trademark of AspinRock or the name of any executive
                     affiliated with AspinRock, or any variation thereof, as a meta-tag or hidden textual
                     element.<br />
@@ -273,7 +273,7 @@ const TermsPage: React.FC = () => {
                 <p>
                     You agree to defend, indemnify, and hold harmless AspinRock, its affiliates, and each of their
                     respective officers, directors, members, partners, managers, and employees from any losses,
-                    damages, claims, liabilities, and costs (including reasonable attorneys' fees) that arise as a result of
+                    damages, claims, liabilities, and costs (including reasonable attorneys&apos; fees) that arise as a result of
                     or are associated with any unauthorized or improper use of the content on this website attributable
                     to you or that occurs through the use of your ID.
                 </p>

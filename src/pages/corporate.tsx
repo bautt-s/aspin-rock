@@ -5,10 +5,11 @@ import { changeNav } from '@/store/appSlice'
 import FooterSection from '@/components/footer'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BiSolidChevronRight } from 'react-icons/bi'
-import corpImg1 from '../../static/corporate-1.png'
-import corpImg2 from '../../static/corporate-2.png'
-import corpImg3 from '../../static/corporate-3.png'
-import heroImg from '../../static/hero-corporate.png'
+import corpImg1 from '@/static/corporate-1.png'
+import corpImg2 from '@/static/corporate-2.png'
+import corpImg3 from '@/static/corporate-3.png'
+import heroImg from '@/static/hero-corporate.png'
+import Image from 'next/image'
 
 const CorporatePage: React.FC = () => {
     const dispatch = useDispatch()
@@ -19,7 +20,7 @@ const CorporatePage: React.FC = () => {
         return () => {
             dispatch(changeNav(undefined))
         };
-    }, [])
+    })
 
     return (
         <div className='overflow-hidden'>
@@ -51,8 +52,10 @@ const CorporatePage: React.FC = () => {
                             </button>
                         </div>
 
-                        <img src={heroImg.src} className='lg:ml-auto md:h-[300px] lg:h-[500px] lg:w-[400px] 
-                        xl:w-auto xl:h-auto object-cover object-center' />
+                        <Image src={heroImg.src} alt='corporate-hero' height={400} width={550}  
+                        className='lg:ml-auto md:h-[300px] lg:h-[500px] lg:w-[400px] xl:w-auto xl:h-auto object-cover object-center' />
+
+                        
                     </div>
 
                     <div className='pt-[40px] px-[40px] lg:px-[80px] pb-[240px]'>
@@ -65,7 +68,9 @@ const CorporatePage: React.FC = () => {
 
                         <div className='flex flex-col mt-[45px] gap-y-[80px] xl:gap-y-[25px]'>
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                                <img src={corpImg1.src} className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+                            <Image src={corpImg1.src} alt='corporate-image' width={700} height={400}
+                                className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+                                
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
                                     <h3 className='text-[40px]'>Financial safety:</h3>
@@ -80,7 +85,8 @@ const CorporatePage: React.FC = () => {
                             </div>
 
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                                <img src={corpImg2.src} className='lg:w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+                                <Image src={corpImg2.src} alt='corporate-image' width={700} height={400}
+                                className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
                                     <h3 className='text-[40px]'>Investments for all:</h3>
@@ -97,7 +103,8 @@ const CorporatePage: React.FC = () => {
                             </div>
 
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                                <img src={corpImg3.src} className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+                                <Image src={corpImg3.src} alt='corporate-image' width={700} height={400}
+                                className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
                                     <h3 className='text-[40px]'>Sustainability:</h3>

@@ -22,7 +22,7 @@ const DisclosuresPage: React.FC = () => {
                             advice or a recommendation to buy, sell, or hold any financial products or securities.
                             Any investment decisions made based on our social media content are solely the responsibility of the individual.
                             Our finance company does not make any representations or warranties as to the accuracy, completeness, or reliability of any information
-                            contained in our social media content, and any reliance on such information is at the individual's own risk.
+                            contained in our social media content, and any reliance on such information is at the individual&apos;s own risk.
                             Our social media content may contain forward-looking statements that are based on our current expectations, estimates, projections, and assumptions.
                             These statements are subject to risks and uncertainties, and actual results may differ materially from those expressed or implied in such statements.
                             To the fullest extent permitted by law, our finance company and its officers, directors, employees, and affiliates will not be liable for any damages

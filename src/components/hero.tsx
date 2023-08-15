@@ -61,12 +61,12 @@ const HeroSection: React.FC = () => {
                     </h1>
 
                     {view === 'individual' && <p className='text-xl text-left md:text-justify'>
-                        At AspinRock, we're on a mission to revolutionize the financial services industry.
+                        At AspinRock, we&apos;re on a mission to revolutionize the financial services industry.
                         We believe that everyone should have access to financial services that are reliable, secure, and innovative.
-                        With our cutting-edge technology and world-class team of experts, we're changing the game of finance.
+                        With our cutting-edge technology and world-class team of experts, we&apos;re changing the game of finance.
                         <br /><br />
-                        From our advanced trading algorithms to our personalized investment advice, we're committed to helping you achieve your financial goals.
-                        Join us on this exciting journey to the moon and beyond, and let's make finance work for you.
+                        From our advanced trading algorithms to our personalized investment advice, we&apos;re committed to helping you achieve your financial goals.
+                        Join us on this exciting journey to the moon and beyond, and let&apos;s make finance work for you.
                     </p>}
 
                     {view === 'advisor' && <p className='text-xl text-left md:text-justify'>

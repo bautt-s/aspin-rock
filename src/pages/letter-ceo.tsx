@@ -58,7 +58,7 @@ const LetterPage: React.FC = () => {
                         shared commitment to excellence. I have no doubt that we possess the qualities and capabilities necessary to make this a truly
                         exceptional year for AspinRock.
                         <br /><br />
-                        Thank you for being a part of this incredible team. Here's to a year filled with growth, success, and a future we can all be proud of.
+                        Thank you for being a part of this incredible team. Here&apos;s to a year filled with growth, success, and a future we can all be proud of.
                         <br /><br />
                         Warm regards,
                         <br /><br />

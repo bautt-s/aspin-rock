@@ -1,5 +1,6 @@
 import { BiSolidChevronRight } from 'react-icons/bi'
 import institutionalVision from '../static/institutional-vision.png'
+import Image from 'next/image'
 
 const InstVision: React.FC = () => {
     function scrollToSection() {
@@ -23,7 +24,8 @@ const InstVision: React.FC = () => {
                     </button>
                 </div>
 
-                <img src={institutionalVision.src} className='mx-auto xl:mr-0 xl:ml-auto mb-[25px] object-cover' height='600' width='700' />
+                <Image src={institutionalVision.src} height='600' width='700' alt='vision-image'
+                className='mx-auto xl:mr-0 xl:ml-auto mb-[25px] object-cover' />
             </div>
 
             <div className='flex flex-col mt-[60px]' id='learn-more'>
@@ -43,7 +45,7 @@ const InstVision: React.FC = () => {
                     <div className='flex flex-col md:flex-row md:items-center mt-[40px] gap-x-[40px]'>
                         <p className='text-xs'>
                             By submitting this form, you agree to be contacted by AspinRock.
-                            Any data collected will be processed according to AspinRock’s privacy policy.
+                            Any data collected will be processed according to AspinRock&apos;s privacy policy.
                             You may opt out at any time.
                         </p>
 

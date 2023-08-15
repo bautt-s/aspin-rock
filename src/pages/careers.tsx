@@ -3,8 +3,22 @@ import FooterSection from "../components/footer"
 import NavSection from "../components/navbar"
 import careersImg1 from '../static/careers-1.png'
 import careersImg3 from '../static/careers-3.png'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { changeNav } from '@/store/appSlice'
+import Image from 'next/image'
 
 const CareersPage: React.FC = () => {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(changeNav('404'))
+        
+        return () => {
+            dispatch(changeNav(undefined))
+        };
+    })
+
     return (
         <div>
             <NavSection />
@@ -25,14 +39,14 @@ const CareersPage: React.FC = () => {
                 </p>
 
                 <h2 className="text-3xl md:text-4xl mt-[80px]">Jobs recommended for you</h2>
-                <span className="text-lg mt-[15px]">We're sorry, there are no jobs available.</span>
+                <span className="text-lg mt-[15px]">We&apos;re sorry, there are no jobs available.</span>
             </div>
 
             <div className="bg-[#1DA1F2] px-[40px] lg:px-[80px] flex flex-col items-center pt-[40px] pb-[80px]">
                 <h1 className="text-3xl md:text-4xl text-center">Forge Your Destiny with Us</h1>
 
                 <div className="flex flex-col lg:flex-row items-center gap-x-[45px] mt-[45px]">
-                    <img src={careersImg1.src} />
+                    <Image src={careersImg1.src} alt='destiny-aspin' width={450} height={300} />
 
                     <p className="text-lg max-w-[35ch] mt-[40px] lg:mt-0">
                         Within our ranks, we value the fortitude of
@@ -87,7 +101,7 @@ const CareersPage: React.FC = () => {
                     <p className="mt-[25px]">
                         At AspinRock, we offer exciting and rewarding technology career opportunities. Join our team and be part
                         of an innovative environment where technology drives our success. As a technology professional at
-                        AspinRock, you'll have the chance to work on cutting-edge projects, collaborate with talented individuals,
+                        AspinRock, you&apos;ll have the chance to work on cutting-edge projects, collaborate with talented individuals,
                         and contribute to the development of groundbreaking solutions. Whether you specialize in software
                         development, data analytics, cybersecurity, or IT infrastructure, we provide a supportive and dynamic
                         workplace that encourages growth and learning. With a commitment to staying at the forefront of
@@ -100,7 +114,7 @@ const CareersPage: React.FC = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row items-center justify-center pt-[200px] lg:pt-[400px] pb-[180px] px-[40px] lg:px-[80px] gap-x-[60px]">
-                <img src={careersImg3.src} />
+                <Image src={careersImg3.src} alt='alumni-aspin' width={500} height={300} />
 
                 <div className='text-center mt-[40px] lg:mt-0'>
                     <h3 className='text-2xl'>Alumni?</h3>

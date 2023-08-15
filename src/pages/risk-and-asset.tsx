@@ -33,7 +33,7 @@ const RiskAssetPage: React.FC = () => {
                                     Our investment approach is firmly anchored on a meticulous appraisal process
                                     that measures risk and identifies catalysts for value amplification. We engage
                                     solely in congenial transactions and partner with competent executive brigades
-                                    to foster desirable results. It's more than just investing; it's about creating a
+                                    to foster desirable results. It&apos;s more than just investing; it&apos;s about creating a
                                     symphony of strategy and execution, and a concert of collaboration and
                                     success.
                                 </p>
@@ -46,7 +46,7 @@ const RiskAssetPage: React.FC = () => {
                                     Our goal is to create wealth by directing resources towards
                                     exceptional businesses. In these enterprises, our financial
                                     engagement, strategic insight, international linkages, and
-                                    operational aid can initiate a profound metamorphosis. It's less about
+                                    operational aid can initiate a profound metamorphosis. It&apos;s less about
                                     funding infusion, more about sparking evolution and driving
                                     monumental change.
                                 </p>
@@ -58,11 +58,11 @@ const RiskAssetPage: React.FC = () => {
                                 <p className="mt-[15px] max-w-[65ch]">
                                     As we establish alliances with enterprises, our mission is to
                                     construct them with a foundation of enduring fortitude. Our vigor,
-                                    born out of the rich and multifaceted platform we've cultivated for
+                                    born out of the rich and multifaceted platform we&apos;ve cultivated for
                                     over thirty-five years, fortifies our businesses. This enables them
                                     to adeptly steer through market ebbs and flows, crafting a path
-                                    to lasting prosperity. Our partnerships aren't merely about
-                                    creating entities; they're about sculpting resilient masterpieces
+                                    to lasting prosperity. Our partnerships aren&apos;t merely about
+                                    creating entities; they&apos;re about sculpting resilient masterpieces
                                     that stand the test of time and turbulence.
                                 </p>
                             </div>
@@ -74,10 +74,10 @@ const RiskAssetPage: React.FC = () => {
 
                 <div className="bg-black flex flex-col p-[40px] lg:p-[80px] text-white">
                     <p className="text-2xl max-w-[105ch]">
-                        "Investment management and advisory is a symphony, blending various instruments of financial assets into a harmonious portfolio. It's a
+                        "Investment management and advisory is a symphony, blending various instruments of financial assets into a harmonious portfolio. It&apos;s a
                         dance with risk and reward, where strategic foresight leads the way, and the market noise fades into the background. Embrace this
                         rhythm, be patient in your endeavors, and persistently fine-tune your financial orchestra. Remember, the maestro of this symphony is
-                        not one who merely plays the notes, but who understands the music and brings it to life for their clients' prosperity"
+                        not one who merely plays the notes, but who understands the music and brings it to life for their clients&apos; prosperity"
                     </p>
 
                     <span className="text-lg mt-[40px]">Jordan Robinson, Founder and CEO</span>

@@ -6,15 +6,18 @@ import { changeNav } from "../store/appSlice"
 import Link from "next/link"
 import { BiSolidChevronRight } from "react-icons/bi"
 import img from '../static/mergers-img.png'
+import Image from "next/image"
 
 const Page404: React.FC = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
+        dispatch(changeNav('404'))
+
         return () => {
             dispatch(changeNav(undefined))
         };
-    }, [])
+    })
 
     return (
         <div>
@@ -26,7 +29,7 @@ const Page404: React.FC = () => {
                 <div className="flex flex-col mt-[40px] lg:mt-0">
                     <h1 className="text-6xl max-w-[15ch]">Oops! This page does not exist.</h1>
 
-                    <p className="text-xl my-[25px]">It seems that you tried to go to a page that doesn't exist.</p>
+                    <p className="text-xl my-[25px]">It seems that you tried to go to a page that doesn&apos;t exist.</p>
 
                     <Link href='/' className="bg-[1DA1F2] flex flex-row items-center group w-fit">
                         <BiSolidChevronRight className="text-2xl text-[#1DA1F2]" />
@@ -34,7 +37,8 @@ const Page404: React.FC = () => {
                     </Link>
                 </div>
 
-                <img src={img.src} className="h-[200px] w-[800px] lg:h-[600px] lg:w-auto object-cover" />
+                <Image src={img.src} alt='404-image' width={300} height={600}
+                className="h-[200px] w-[800px] lg:h-[600px] lg:w-auto object-cover" />
             </div>
 
             <FooterSection />
