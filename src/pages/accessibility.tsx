@@ -1,9 +1,14 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
+import Head from "next/head"
 
 const AccessibilityPage: React.FC = () => {
     return (
         <div>
+            <Head>
+                <title>AspinRock | Accessibility</title>
+            </Head>
+
             <NavSection />
 
             <div className="flex flex-col">

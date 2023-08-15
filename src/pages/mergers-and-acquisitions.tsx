@@ -2,10 +2,15 @@ import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
 import mergersHero from '../static/mergers-hero.png'
 import mergersImg from '../static/mergers-img.png'
+import Head from "next/head"
 
 const MergersPage: React.FC = () => {
     return (
         <div className="overflow-hidden">
+            <Head>
+                <title>AspinRock | M&A</title>
+            </Head>
+
             <NavSection />
 
             <div className="w-full flex flex-col">

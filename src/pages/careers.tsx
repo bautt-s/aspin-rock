@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { changeNav } from '@/store/appSlice'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const CareersPage: React.FC = () => {
     const dispatch = useDispatch()
@@ -21,6 +22,10 @@ const CareersPage: React.FC = () => {
 
     return (
         <div>
+            <Head>
+                <title>AspinRock | Careers</title>
+            </Head>
+
             <NavSection />
 
             <div className="flex flex-col bg-black justify-center items-center text-white px-[40px] lg:px-[80px] pt-[80px] pb-[120px]">

@@ -2,10 +2,15 @@ import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
 import imageRA from '../static/risk-asset.png'
 import imageRA2 from '../static/risk-asset-2.png'
+import Head from "next/head"
 
 const RiskAssetPage: React.FC = () => {
     return (
         <div>
+            <Head>
+                <title>AspinRock | Risks & Assets</title>
+            </Head>
+
             <NavSection />
 
             <div className="flex flex-col">

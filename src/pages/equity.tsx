@@ -2,10 +2,15 @@ import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
 import equityHero from '../static/equity-hero.png'
 import equityImg from '../static/equity-img.png'
+import Head from "next/head"
 
 const EquityPage: React.FC = () => {
     return (
         <div className="overflow-hidden">
+            <Head>
+                <title>AspinRock | Equity</title>
+            </Head>
+
             <NavSection />
 
             <div className="w-full flex flex-col">

@@ -1,9 +1,14 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
+import Head from "next/head"
 
 const DisclosuresPage: React.FC = () => {
     return (
         <div>
+            <Head>
+                <title>AspinRock | Disclosures</title>
+            </Head>
+
             <NavSection />
 
             <div className="relative pb-[300px] pt-[100px] flex justify-center items-center">

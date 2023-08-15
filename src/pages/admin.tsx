@@ -1,5 +1,6 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
+import Head from "next/head"
 import { useState, useEffect } from 'react'
 
 const AdminPage: React.FC = () => {
@@ -64,6 +65,10 @@ const AdminPage: React.FC = () => {
     
     return (
         <div>
+            <Head>
+                <title>AspinRock | Admin</title>
+            </Head>
+
             <NavSection />
 
             <div className="h-[50px] bg-[#1DA1F2]"></div>

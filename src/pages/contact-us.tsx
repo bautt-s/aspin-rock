@@ -1,9 +1,14 @@
 import NavSection from '@/components/navbar'
 import FooterSection from '@/components/footer'
+import Head from 'next/head'
 
 const ContactPage: React.FC = () => {
     return (
         <div>
+            <Head>
+                <title>AspinRock | Contact</title>
+            </Head>
+
             <NavSection />
 
             <div className="flex flex-col">

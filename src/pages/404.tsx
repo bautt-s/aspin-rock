@@ -7,6 +7,7 @@ import Link from "next/link"
 import { BiSolidChevronRight } from "react-icons/bi"
 import img from '../static/mergers-img.png'
 import Image from "next/image"
+import Head from "next/head"
 
 const Page404: React.FC = () => {
     const dispatch = useDispatch()
@@ -21,6 +22,10 @@ const Page404: React.FC = () => {
 
     return (
         <div>
+            <Head>
+                <title>AspinRock | Not Found</title>
+            </Head>
+
             <NavSection />
 
             <div className="w-full h-[50px] bg-[#1DA1F2]"></div>

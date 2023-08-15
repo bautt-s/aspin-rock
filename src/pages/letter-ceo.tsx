@@ -1,10 +1,14 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
-import { useEffect } from 'react'
+import Head from "next/head"
 
 const LetterPage: React.FC = () => {
     return (
         <div>
+            <Head>
+                <title>AspinRock | Letter</title>
+            </Head>
+
             <NavSection />
 
             <div className="flex flex-col">

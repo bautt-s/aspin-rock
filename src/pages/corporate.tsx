@@ -10,6 +10,7 @@ import corpImg2 from '@/static/corporate-2.png'
 import corpImg3 from '@/static/corporate-3.png'
 import heroImg from '@/static/hero-corporate.png'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const CorporatePage: React.FC = () => {
     const dispatch = useDispatch()
@@ -24,6 +25,10 @@ const CorporatePage: React.FC = () => {
 
     return (
         <div className='overflow-hidden'>
+            <Head>
+                <title>AspinRock | Corporate</title>
+            </Head>
+
             <NavSection />
 
             <div className='w-full'>
