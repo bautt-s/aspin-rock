@@ -1,6 +1,5 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
-import updatesHero from '@/static/upd-art-hero.png'
 import { useState, useEffect } from 'react'
 
 interface updateInterface {
@@ -36,7 +35,7 @@ const UpdatesPage: React.FC = () => {
 
             <div className="flex flex-col">
                 <div className="relative">
-                    <img src={updatesHero.src} />
+                    <img src='upd-art-hero.png' />
 
                     <span className="font-[500] text-[52px] text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                         Updates
