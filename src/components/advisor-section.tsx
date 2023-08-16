@@ -1,5 +1,4 @@
 import { BiSolidChevronRight, BiPlusMedical } from 'react-icons/bi'
-import moneyTalks from '../static/money-talks.png'
 import Image from 'next/image'
 
 const gridItems = [
@@ -40,7 +39,7 @@ const AdvisorSection: React.FC = () => {
 
             <div className="bg-white px-[40px] xl:px-[80px] flex flex-col xl:flex-row justify-center items-center py-[120px] gap-x-[60px]">
                 
-                <Image src={moneyTalks.src} alt='money-talks' width={800} height={600} />
+                <Image src='/money-talks.png' alt='money-talks' width={800} height={600} />
 
                 <div className="mt-[60px] xl:mt-0 text-center xl:text-left">
                     <h1 className="font-[700] text-3xl max-w-[25ch] mb-[15px]">Influencing Tomorrow with Today’s Advisors: A Review</h1>

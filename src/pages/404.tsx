@@ -5,7 +5,6 @@ import { useEffect } from 'react'
 import { changeNav } from "../store/appSlice"
 import Link from "next/link"
 import { BiSolidChevronRight } from "react-icons/bi"
-import img from '../static/mergers-img.png'
 import Image from "next/image"
 import Head from "next/head"
 
@@ -42,7 +41,7 @@ const Page404: React.FC = () => {
                     </Link>
                 </div>
 
-                <Image src={img.src} alt='404-image' width={300} height={600}
+                <Image src='/mergers-img.png' alt='404-image' width={300} height={600}
                 className="h-[200px] w-[800px] lg:h-[600px] lg:w-auto object-cover" />
             </div>
 

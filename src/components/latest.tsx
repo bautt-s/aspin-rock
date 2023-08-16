@@ -1,8 +1,5 @@
 import { BsTwitter } from 'react-icons/bs'
 import { BiPlusMedical } from 'react-icons/bi'
-import tweetImg1 from '../static/tweet-1.png'
-import tweetImg2 from '../static/tweet-2.png'
-import tweetImg3 from '../static/tweet-3.png'
 import Link from 'next/link' 
 
 const LatestSection: React.FC = () => {
@@ -23,7 +20,7 @@ const LatestSection: React.FC = () => {
                             <span className='text-sm'>@AspinRock1 · 02 April</span>
                         </div>
 
-                        <img src={tweetImg1.src} className='px-[15px] py-[60px]' />
+                        <img src='/tweet-1.png' className='px-[15px] py-[60px]' />
                     </div>
 
                     <div className="shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] flex flex-col">
@@ -35,7 +32,7 @@ const LatestSection: React.FC = () => {
                             <span className='text-sm'>@AspinRock1 · 02 May</span>
                         </div>
 
-                        <img src={tweetImg2.src} className='px-[15px] py-[60px] ' />
+                        <img src='/tweet-2.png' className='px-[15px] py-[60px] ' />
                     </div>
 
                     <div className="shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] flex flex-col">
@@ -47,7 +44,7 @@ const LatestSection: React.FC = () => {
                             <span className='text-sm'>@AspinRock1 · 26 April</span>
                         </div>
 
-                        <img src={tweetImg3.src} className='px-[15px] py-[60px] ' />
+                        <img src='/tweet-3.png' className='px-[15px] py-[60px] ' />
                     </div>
                 </div>
             </div>

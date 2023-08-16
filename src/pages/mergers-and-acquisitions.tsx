@@ -1,7 +1,5 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
-import mergersHero from '../static/mergers-hero.png'
-import mergersImg from '../static/mergers-img.png'
 import Head from "next/head"
 
 const MergersPage: React.FC = () => {
@@ -14,7 +12,7 @@ const MergersPage: React.FC = () => {
             <NavSection />
 
             <div className="w-full flex flex-col">
-                <img src={mergersHero.src} className="object-cover max-h-[600px]" />
+                <img src='/mergers-hero.png' className="object-cover max-h-[600px]" />
 
                 <div className="mt-[80px] flex flex-col items-center px-[40px] lg:px-[80px]">
                     <h1 className="text-6xl mb-[80px]">Merger’s and Acquisitions (M&A’s) </h1>
@@ -66,7 +64,7 @@ const MergersPage: React.FC = () => {
                             </div>
                         </div>
 
-                        <img src={mergersImg.src} className="h-[400px] sm:h-[200px] sm:w-[800px] lg:h-auto 
+                        <img src='/mergers-img.png' className="h-[400px] sm:h-[200px] sm:w-[800px] lg:h-auto 
                         lg:w-[350px] xl:w-[600px] 2xl:w-auto object-cover" />
                     </div>
                 </div>

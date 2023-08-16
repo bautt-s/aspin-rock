@@ -1,5 +1,4 @@
 import { BiSolidChevronRight } from 'react-icons/bi'
-import institutionalVision from '../static/institutional-vision.png'
 import Image from 'next/image'
 
 const InstVision: React.FC = () => {
@@ -24,7 +23,7 @@ const InstVision: React.FC = () => {
                     </button>
                 </div>
 
-                <Image src={institutionalVision.src} height='600' width='700' alt='vision-image'
+                <Image src='/institutional-vision.png' height='600' width='700' alt='vision-image'
                 className='mx-auto xl:mr-0 xl:ml-auto mb-[25px] object-cover' />
             </div>
 

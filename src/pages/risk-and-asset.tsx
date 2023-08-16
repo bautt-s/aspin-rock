@@ -1,7 +1,5 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
-import imageRA from '../static/risk-asset.png'
-import imageRA2 from '../static/risk-asset-2.png'
 import Head from "next/head"
 
 const RiskAssetPage: React.FC = () => {
@@ -14,7 +12,7 @@ const RiskAssetPage: React.FC = () => {
             <NavSection />
 
             <div className="flex flex-col">
-                <img src={imageRA.src} className="w-full h-[400px] xl:h-[800px] object-cover object-top" />
+                <img src='/risk-asset.png' className="w-full h-[400px] xl:h-[800px] object-cover object-top" />
 
                 <div className="flex flex-col px-[40px] lg:px-[80px] mx-auto mt-[40px] pb-[80px]">
                     <div className="flex flex-col mx-auto">
@@ -73,7 +71,7 @@ const RiskAssetPage: React.FC = () => {
                             </div>
                         </div>
 
-                        <img src={imageRA2.src} className="hidden xl:flex w-auto h-[500px] object-cover" />
+                        <img src='/risk-asset-2.png' className="hidden xl:flex w-auto h-[500px] object-cover" />
                     </div>
                 </div>
 

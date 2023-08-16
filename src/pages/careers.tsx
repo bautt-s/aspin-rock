@@ -1,8 +1,6 @@
 import { BiSolidChevronRight } from 'react-icons/bi'
 import FooterSection from "../components/footer"
 import NavSection from "../components/navbar"
-import careersImg1 from '../static/careers-1.png'
-import careersImg3 from '../static/careers-3.png'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { changeNav } from '@/store/appSlice'
@@ -51,7 +49,7 @@ const CareersPage: React.FC = () => {
                 <h1 className="text-3xl md:text-4xl text-center">Forge Your Destiny with Us</h1>
 
                 <div className="flex flex-col lg:flex-row items-center gap-x-[45px] mt-[45px]">
-                    <Image src={careersImg1.src} alt='destiny-aspin' width={450} height={300} />
+                    <Image src='/careers-1.png' alt='destiny-aspin' width={450} height={300} />
 
                     <p className="text-lg max-w-[35ch] mt-[40px] lg:mt-0">
                         Within our ranks, we value the fortitude of
@@ -119,7 +117,7 @@ const CareersPage: React.FC = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row items-center justify-center pt-[200px] lg:pt-[400px] pb-[180px] px-[40px] lg:px-[80px] gap-x-[60px]">
-                <Image src={careersImg3.src} alt='alumni-aspin' width={500} height={300} />
+                <Image src='/careers-3.png' alt='alumni-aspin' width={500} height={300} />
 
                 <div className='text-center mt-[40px] lg:mt-0'>
                     <h3 className='text-2xl'>Alumni?</h3>
