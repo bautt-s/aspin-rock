@@ -7,9 +7,27 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BiSolidChevronRight } from 'react-icons/bi'
 import Image from 'next/image'
 import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }: { locale: any }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+                'footer',
+            ])),
+        },
+    }
+}
 
 const CorporatePage: React.FC = () => {
     const dispatch = useDispatch()
+
+    const handleScroll = () => {
+        document.getElementById('mission')?.scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
 
     useEffect(() => {
         dispatch(changeNav('corporate'))
@@ -49,17 +67,17 @@ const CorporatePage: React.FC = () => {
 
                             <button className='flex flex-row items-center bg-white w-fit py-[15px] px-[35px] relative'>
                                 <BiSolidChevronRight className='text-[#1DA1F2] text-2xl absolute left-[15px]' />
-                                <span className='font-[500] ml-[5px] text-black'>Explore our purpose</span>
+                                <span className='font-[500] ml-[5px] text-black' onClick={handleScroll}>Explore our purpose</span>
                             </button>
                         </div>
 
-                        <Image src='hero-corporate.png' alt='corporate-hero' height={400} width={550}  
+                        <Image src='/hero-corporate.png' alt='corporate-hero' height={400} width={550}  
                         className='lg:ml-auto md:h-[300px] lg:h-[500px] lg:w-[400px] xl:w-auto xl:h-auto object-cover object-center' />
 
                         
                     </div>
 
-                    <div className='pt-[40px] px-[40px] lg:px-[80px] pb-[240px]'>
+                    <div className='pt-[40px] px-[40px] lg:px-[80px] pb-[240px]' id='mission'>
                         <p className='text-xl border-b-[2px] border-black pb-[20px] pr-[180px] w-fit mb-[45px]'>
                             We’re here to change the world for the better.
                             <br />Join us on our mission.
@@ -69,7 +87,7 @@ const CorporatePage: React.FC = () => {
 
                         <div className='flex flex-col mt-[45px] gap-y-[80px] xl:gap-y-[25px]'>
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                            <Image src='corporate-1.png' alt='corporate-image' width={700} height={400}
+                            <Image src='/corporate-1.png' alt='corporate-image' width={700} height={400}
                                 className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
                                 
 
@@ -86,7 +104,7 @@ const CorporatePage: React.FC = () => {
                             </div>
 
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                                <Image src='corporate-2.png' alt='corporate-image' width={700} height={400}
+                                <Image src='/corporate-2.png' alt='corporate-image' width={700} height={400}
                                 className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
@@ -104,7 +122,7 @@ const CorporatePage: React.FC = () => {
                             </div>
 
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                                <Image src='corporate-3.png' alt='corporate-image' width={700} height={400}
+                                <Image src='/corporate-3.png' alt='corporate-image' width={700} height={400}
                                 className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>

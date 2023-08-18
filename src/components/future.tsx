@@ -2,21 +2,25 @@ import { BiPlusMedical } from 'react-icons/bi'
 
 const gridItems = [
     {
+        link: '/risk-and-asset',
         title: 'Risk Management',
         subtitle: 'Protect Your Investment with Comprehensive Risk Management',
         description: "Investing comes with a certain level of risk, but you don't have to navigate those risks alone. Risk management services are designed to help individual investors identify and mitigate potential risks in their investment portfolio. These services can help you protect your investments and feel confident in your financial future.",
     },
     {
+        link: '',
         title: 'Investment Advisory',
         subtitle: 'Make Informed Investment Decisions with Expert Advisory Services',
         description: 'Investing can be daunting, especially for those who are new to the market. Investment advisory services provide individual investors with guidance and information to make informed investment decisions. Advisors work with you to create an investment strategy that aligns with your goals and risk tolerance, helping you maximize returns and minimize risks.',
     },
     {
+        link: '/equity',
         title: 'Private Equity',
         subtitle: 'Working for the long term',
         description: 'Private equity offers investors access to exclusive investment opportunities not available through public markets. Private equity services provide individual investors with the expertise and support needed to identify and invest in promising private companies. These services help investors understand the risks and potential rewards of private equity investments, allowing them to make informed decisions about their portfolio and tap into this exciting investment opportunity.',
     },
     {
+        link: '/risk-and-asset',
         title: 'Asset Management',
         subtitle: 'Seeking stable, lower risk returns in some markets',
         description: 'Managing an investment portfolio can be time-consuming and overwhelming, especially for individual investors with multiple investments. Asset management services help simplify the process by providing professional support to optimize your portfolio. Advisors work with you to develop a customized strategy that maximizes returns while minimizing risks, helping you feel confident in your investments without the hassle of managing them on your own.',

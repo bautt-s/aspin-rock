@@ -1,6 +1,18 @@
 import FooterSection from "@/components/footer"
 import NavSection from "@/components/navbar"
 import Head from "next/head"
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }: { locale: any }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+                'footer',
+            ])),
+        },
+    }
+}
 
 const RiskAssetPage: React.FC = () => {
     return (

@@ -6,6 +6,18 @@ import { useDispatch } from 'react-redux'
 import { changeNav } from '@/store/appSlice'
 import Image from 'next/image'
 import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }: { locale: any }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+                'footer',
+            ])),
+        },
+    }
+}
 
 const CareersPage: React.FC = () => {
     const dispatch = useDispatch()

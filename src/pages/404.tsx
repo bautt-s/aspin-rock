@@ -7,6 +7,18 @@ import Link from "next/link"
 import { BiSolidChevronRight } from "react-icons/bi"
 import Image from "next/image"
 import Head from "next/head"
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }: { locale: any }) {
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, [
+                'common',
+                'footer',
+            ])),
+        },
+    }
+}
 
 const Page404: React.FC = () => {
     const dispatch = useDispatch()
@@ -42,7 +54,7 @@ const Page404: React.FC = () => {
                 </div>
 
                 <Image src='/mergers-img.png' alt='404-image' width={300} height={600}
-                className="h-[200px] w-[800px] lg:h-[600px] lg:w-auto object-cover" />
+                    className="h-[200px] w-[800px] lg:h-[600px] lg:w-auto object-cover" />
             </div>
 
             <FooterSection />

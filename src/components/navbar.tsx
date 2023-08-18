@@ -22,7 +22,7 @@ const NavSection: React.FC = () => {
             px-[20px] md:px-[40px] lg:px-[80px] items-center text-xs md:text-sm gap-y-[10px] sm:gap-y-0 py-[10px] sm:py-0">
                 <div className="hidden xl:flex"></div>
 
-                <ul className="flex flex-row gap-[20px] xl:gap-[35px] mx-0 xl:mx-auto underline">
+                <ul className="flex flex-row gap-[20px] xl:gap-[35px] mx-0 xl:mx-auto">
                     <li>
                         <Link href='/corporate'>About Us</Link>
                     </li>

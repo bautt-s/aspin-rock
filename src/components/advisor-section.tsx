@@ -37,8 +37,7 @@ const AdvisorSection: React.FC = () => {
                 </button>
             </div>
 
-            <div className="bg-white px-[40px] xl:px-[80px] flex flex-col xl:flex-row justify-center items-center py-[120px] gap-x-[60px]">
-                
+            <div className="bg-white px-[40px] xl:px-[80px] flex flex-col xl:flex-row justify-center items-center py-[120px] gap-x-[60px]" id='portfolio'>
                 <Image src='/money-talks.png' alt='money-talks' width={800} height={600} />
 
                 <div className="mt-[60px] xl:mt-0 text-center xl:text-left">

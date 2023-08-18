@@ -1,6 +1,15 @@
+import { changeView } from '@/store/appSlice'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 const FooterSection: React.FC = () => {
+    const router = useRouter()
+
+    const handlePortfolio = () => {
+        changeView('advisor')
+        router.push('/advisor#portfolio')
+    }
+
     return (
         <footer className="flex flex-col">
             <div className="w-full xl:h-[500px] bg-[#161616] text-white px-[40px] lg:px-[80px] py-[40px]">
@@ -27,8 +36,7 @@ const FooterSection: React.FC = () => {
                         <h4 className="border-b-[1px] border-white pb-[15px]">Commentary</h4>
 
                         <ul className="flex flex-col text-sm md:gap-y-[20px] mt-[25px]">
-                            <li>Weekly commentary</li>
-                            <li>Portfolio management views</li>
+                            <li className='hover:underline' onClick={handlePortfolio}>Portfolio management views</li>
                         </ul>
                     </div>
 
@@ -36,9 +44,13 @@ const FooterSection: React.FC = () => {
                         <h4 className="border-b-[1px] border-white pb-[15px]">About Us</h4>
 
                         <ul className="flex flex-col text-sm md:gap-y-[20px] mt-[25px]">
-                            <li>About AspinRock</li>
-                            <li>Corporate sustainability</li>
-                            <li>Investment integrity</li>
+                            <li className='hover:underline'>
+                                <Link href='/corporate'>About AspinRock</Link>
+                            </li>
+
+                            <li className='hover:underline'>
+                                <Link href='/continuity'>Corporate sustainability</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

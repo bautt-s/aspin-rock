@@ -20,7 +20,7 @@ const Landing: React.FC = () => {
     const view = useSelector((state: RootState) => state.app.view)
 
     useEffect(() => {
-        if (router.pathname !== `/${view}`) router.push(`/${view}`)
+        if (router.pathname === `/`) router.push(`/${view}`)
     })
 
     return (
