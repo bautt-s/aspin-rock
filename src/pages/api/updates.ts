@@ -55,7 +55,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 let updateCreated = await prisma.update.create({
                     data: {
                         ...body.data,
-                        image: body.data.image === '' ? undefined : body.data.image
+                        image: body.data.image
                     }
                 })
 
