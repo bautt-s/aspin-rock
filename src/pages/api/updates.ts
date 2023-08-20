@@ -1,4 +1,4 @@
-import { prisma } from "../../../prisma/db";
+import prisma from "../../../prisma/db";
 import { NextApiRequest, NextApiResponse } from "next";
 
 type bodyType = {
@@ -16,8 +16,22 @@ type bodyType = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const requestMethod = req.method;
-    const body: bodyType = JSON.parse(req.body)
     const query = req.query
+
+    let body: bodyType = {
+        id: '',
+        title: '',
+        data: {
+            title: '',
+            date: new Date(),
+            content: '',
+            image: '',
+            media: [],
+            category: ''
+        }
+    }
+
+    if (requestMethod !== 'GET') body = JSON.parse(req.body)
 
     try {
         switch (requestMethod) {
@@ -31,7 +45,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     },
 
                     orderBy: {
-                        date: 'asc'
+                        date: 'desc'
                     }
                 })
 

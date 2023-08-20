@@ -1,4 +1,4 @@
-import { prisma } from "../../../prisma/db";
+import prisma from "../../../prisma/db";
 import { NextApiRequest, NextApiResponse } from "next";
 
 type bodyType = {
@@ -16,8 +16,22 @@ type bodyType = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const requestMethod = req.method;
-    const body: bodyType = JSON.parse(req.body)
     const query = req.query
+
+    let body: bodyType = {
+        id: '',
+        title: '',
+        data: {
+            title: '',
+            date: new Date(),
+            content: '',
+            image: '',
+            media: [],
+            category: ''
+        }
+    }
+
+    if (requestMethod !== 'GET') body = JSON.parse(req.body)
 
     try {
         switch (requestMethod) {
@@ -31,19 +45,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     },
 
                     orderBy: {
-                        date: 'asc'
+                        date: 'desc'
                     }
                 })
 
                 if (articles.length) return res.status(200).send(articles)
-                else return res.status(404).json({ msg: 'No articles found.'})
+                else return res.status(404).json({ msg: 'No articles found.' })
             case 'POST':
                 let articleCreated = await prisma.article.create({
-                    data: body.data
+                    data: {
+                        ...body.data,
+                        image: body.data.image === '' ? undefined : body.data.image
+                    }
                 })
 
-                if (articleCreated) return res.status(200).json({ msg: `Created article: ${body.data.title}`})
-                else return res.status(400).json({ msg: 'Could not create article.'})
+                if (articleCreated) return res.status(200).json({ msg: `Created article: ${body.data.title}` })
+                else return res.status(400).json({ msg: 'Could not create article.' })
             case 'PUT':
                 let articleUpdated = await prisma.article.update({
                     where: {
@@ -58,8 +75,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     }
                 })
 
-                if (articleUpdated) return res.status(200).json({ msg: `Updated article.`})
-                else return res.status(400).json({ msg: 'Could not update article.'})
+                if (articleUpdated) return res.status(200).json({ msg: `Updated article.` })
+                else return res.status(400).json({ msg: 'Could not update article.' })
             case 'DELETE':
                 let articleDeleted = await prisma.article.delete({
                     where: {
@@ -67,10 +84,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     }
                 })
 
-                if (articleDeleted) return res.status(200).json({ msg: `Deleted article.`})
-                else return res.status(400).json({ msg: 'Could not delete article.'})
+                if (articleDeleted) return res.status(200).json({ msg: `Deleted article.` })
+                else return res.status(400).json({ msg: 'Could not delete article.' })
             default:
-                return res.status(200).json({ msg: 'Welcome to AspinRock!'})
+                return res.status(200).json({ msg: 'Welcome to AspinRock!' })
         }
     } catch (error) {
         console.log(error)

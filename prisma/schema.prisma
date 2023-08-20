@@ -12,7 +12,7 @@ model Article {
     title       String
     date        DateTime @default(now())
     content     String
-    image       String
+    image       String @default("https://ingeniosas.org/wp-content/plugins/bb-plugin/img/no-image.png")
     media       String[]
     category    String
 }
@@ -22,7 +22,7 @@ model Update {
     title       String
     date        DateTime @default(now())
     content     String
-    image       String
+    image       String @default("https://ingeniosas.org/wp-content/plugins/bb-plugin/img/no-image.png")
     media       String[]
     category    String
 }
