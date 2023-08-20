@@ -81,9 +81,17 @@ const NavSection: React.FC = () => {
                 </Link>
 
                 <ul className="flex flex-row gap-[35px] md:gap-[60px] sm:ml-[35px] md:ml-[60px] mt-[10px] sm:mt-0">
-                    <li>Who we are</li>
-                    <li>News</li>
-                    <li>Updates</li>
+                    <li className='hover:underline'>
+                        <Link href='/corporate'>Who we are</Link>
+                    </li>
+
+                    <li className='hover:underline'>
+                        <Link href='/articles'>News</Link>
+                    </li>
+
+                    <li className='hover:underline'>
+                        <Link href='/updates'>Updates</Link>
+                    </li>
                 </ul>
             </div>
         </nav>

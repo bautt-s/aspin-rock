@@ -38,6 +38,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             case 'GET':
                 let updates = await prisma.update.findMany({
                     where: {
+                        id: query.id ? query.id?.toString() : undefined,
+                        
                         title: {
                             contains: query.title?.toString() || '',
                             mode: 'insensitive'

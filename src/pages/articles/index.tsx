@@ -3,8 +3,9 @@ import NavSection from "@/components/navbar"
 import Head from "next/head"
 import { useState, useEffect } from 'react'
 import { FiSearch } from 'react-icons/fi'
+import Link from "next/link"
 
-interface articleInterface {
+export interface articleInterface {
     id: string,
     title: string,
     date: string,
@@ -35,7 +36,7 @@ const ArticlesPage: React.FC = () => {
     useEffect(() => {
         getArticles()
     }, [])
-    console.log(articles)
+    
     return (
         <div>
             <Head>
@@ -48,7 +49,7 @@ const ArticlesPage: React.FC = () => {
                 <div className="relative">
                     <img src='upd-art-hero.png' />
 
-                    <span className="font-[500] text-[52px] text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <span className="font-[500] text-[40px] text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                         Articles
                     </span>
                 </div>
@@ -68,12 +69,13 @@ const ArticlesPage: React.FC = () => {
                         }
 
                         {articles &&
-                            <div className="flex flex-row items-center gap-x-[40px] mt-[40px]">
+                            <Link href={`/articles/${articles[0]?.id}`}
+                            className="flex flex-row items-center gap-x-[40px] mt-[40px] group">
                                 <img src={articles[0]?.image} className="w-auto h-[300px] object-cover" />
 
                                 <div className="flex flex-col gap-y-[15px]">
                                     <span>{articles[0]?.category.toUpperCase() || 'INFORMATIVE'}</span>
-                                    <h3 className="font-[500]">{articles[0]?.title.length > 80 ? articles[0]?.title.slice(0, 80) + '...' : articles[0]?.title}</h3>
+                                    <h3 className="font-[500] group-hover:underline">{articles[0]?.title.length > 80 ? articles[0]?.title.slice(0, 80) + '...' : articles[0]?.title}</h3>
 
                                     <span className="text-[#A3AAAE]">
                                         {new Date(articles[0]?.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -81,13 +83,14 @@ const ArticlesPage: React.FC = () => {
 
                                     <p>{articles[0]?.content.slice(0, 140) + '...'}</p>
                                 </div>
-                            </div>
+                            </Link>
                         }
 
                         {articles &&
                             <div className="grid grid-cols-3 gap-x-[25px] gap-y-[50px] mt-[40px]">
                                 {articles.slice(1).map((item: articleInterface, index) =>
-                                    <div key={index} className="flex flex-col gap-y-[15px] group cursor-pointer">
+                                    <Link key={index} href={`/articles/${item.id}`}
+                                    className="flex flex-col gap-y-[15px] group cursor-pointer">
                                         <img src={item.image} className="h-[150px] object-cover" />
                                         <span>{item.category.toUpperCase() || 'INFORMATIVE'}</span>
 
@@ -100,7 +103,7 @@ const ArticlesPage: React.FC = () => {
                                         <span className="text-[#A95228] underline underline-offset-4 decoration-[2px] group-hover:underline-offset-[6px]">
                                             WATCH MORE
                                         </span>
-                                    </div>
+                                    </Link>
                                 )}
                             </div>
                         }
