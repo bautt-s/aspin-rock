@@ -35,7 +35,7 @@ const ArticlesPage: React.FC = () => {
     useEffect(() => {
         getArticles()
     }, [])
-
+    console.log(articles)
     return (
         <div>
             <Head>
@@ -69,17 +69,17 @@ const ArticlesPage: React.FC = () => {
 
                         {articles &&
                             <div className="flex flex-row items-center gap-x-[40px] mt-[40px]">
-                                <img src={articles[0].image} className="w-auto h-[300px] object-cover" />
+                                <img src={articles[0]?.image} className="w-auto h-[300px] object-cover" />
 
                                 <div className="flex flex-col gap-y-[15px]">
-                                    <span>{articles[0].category.toUpperCase() || 'INFORMATIVE'}</span>
-                                    <h3 className="font-[500]">{articles[0].title.length > 80 ? articles[0].title.slice(0, 80) + '...' : articles[0].title}</h3>
+                                    <span>{articles[0]?.category.toUpperCase() || 'INFORMATIVE'}</span>
+                                    <h3 className="font-[500]">{articles[0]?.title.length > 80 ? articles[0]?.title.slice(0, 80) + '...' : articles[0]?.title}</h3>
 
                                     <span className="text-[#A3AAAE]">
-                                        {new Date(articles[0].date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                                        {new Date(articles[0]?.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                                     </span>
 
-                                    <p>{articles[0].content.slice(0, 140) + '...'}</p>
+                                    <p>{articles[0]?.content.slice(0, 140) + '...'}</p>
                                 </div>
                             </div>
                         }

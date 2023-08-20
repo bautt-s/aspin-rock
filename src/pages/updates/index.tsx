@@ -69,17 +69,17 @@ const UpdatesPage: React.FC = () => {
 
                         {updates &&
                             <div className="flex flex-row items-center gap-x-[25px] mt-[40px]">
-                                <img src={updates[0].image} className="w-auto h-[300px] object-cover" />
+                                <img src={updates[0]?.image} className="w-auto h-[300px] object-cover" />
 
                                 <div className="flex flex-col gap-y-[15px]">
-                                    <span>{updates[0].category.toUpperCase() || 'INFORMATIVE'}</span>
-                                    <h3 className="font-[500]">{updates[0].title.length > 80 ? updates[0].title.slice(0, 80) + '...' : updates[0].title}</h3>
+                                    <span>{updates[0]?.category.toUpperCase() || 'INFORMATIVE'}</span>
+                                    <h3 className="font-[500]">{updates[0]?.title.length > 80 ? updates[0]?.title.slice(0, 80) + '...' : updates[0]?.title}</h3>
 
                                     <span className="text-[#A3AAAE]">
-                                        {new Date(updates[0].date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                                        {new Date(updates[0]?.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                                     </span>
 
-                                    <p>{updates[0].content.slice(0, 140) + '...'}</p>
+                                    <p>{updates[0]?.content.slice(0, 140) + '...'}</p>
                                 </div>
                             </div>
                         }
