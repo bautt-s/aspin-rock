@@ -22,7 +22,7 @@ model Update {
     title       String
     date        DateTime @default(now())
     content     String
-    image       String @default("https://ingeniosas.org/wp-content/plugins/bb-plugin/img/no-image.png")
+    image       String? @default("https://ingeniosas.org/wp-content/plugins/bb-plugin/img/no-image.png")
     media       String[]
     category    String
 }

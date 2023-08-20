@@ -53,7 +53,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 else return res.status(404).json({ msg: 'No updates found.'})
             case 'POST':
                 let updateCreated = await prisma.update.create({
-                    data: body.data
+                    data: {
+                        ...body.data,
+                        image: body.data.image === '' ? undefined : body.data.image
+                    }
                 })
 
                 if (updateCreated) return res.status(200).json({ msg: `Created update: ${body.data.title}`})
