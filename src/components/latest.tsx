@@ -74,7 +74,7 @@ const LatestSection: React.FC = () => {
                         <Link href='/articles/2ea87f9b-3b85-4a0e-9d6b-7b9d09df23f2' 
                         className='flex flex-row items-center'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            Recent Bank Crashes - what's next?
+                            Recent Bank Crashes - what&apos;s next?
                         </Link>
 
                         <Link href='/articles/4efbd0cf-0261-4a06-b632-91ed23f9f95f' 
