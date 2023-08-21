@@ -1,55 +1,10 @@
-import { BsTwitter } from 'react-icons/bs'
 import { BiPlusMedical } from 'react-icons/bi'
 import Link from 'next/link' 
 
 const LatestSection: React.FC = () => {
     return (
         <div className="px-[40px] lg:px-[80px] py-[80px] bg-white flex flex-col">
-            <div>
-                <h1 className="text-5xl lg:text-[55px] text-center leading-[60px] xl:text-left xl:leading-normal">
-                    The Latest from <strong className='font-[400] underline'>AspinRock</strong>
-                </h1>
-
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-[35px] mt-[60px]">
-                    <div className="shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] flex flex-col">
-                        <div className='flex flex-row items-center gap-x-[10px]'>
-                            <div className='bg-[#1DA1F2] p-[10px]'>
-                                <BsTwitter className='text-xl' />
-                            </div>
-
-                            <span className='text-sm'>@AspinRock1 · 02 April</span>
-                        </div>
-
-                        <img src='/tweet-1.png' className='px-[15px] py-[60px]' />
-                    </div>
-
-                    <div className="shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] flex flex-col">
-                        <div className='flex flex-row items-center gap-x-[10px]'>
-                            <div className='bg-[#1DA1F2] p-[10px]'>
-                                <BsTwitter className='text-xl' />
-                            </div>
-
-                            <span className='text-sm'>@AspinRock1 · 02 May</span>
-                        </div>
-
-                        <img src='/tweet-2.png' className='px-[15px] py-[60px] ' />
-                    </div>
-
-                    <div className="shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] flex flex-col">
-                        <div className='flex flex-row items-center gap-x-[10px]'>
-                            <div className='bg-[#1DA1F2] p-[10px]'>
-                                <BsTwitter className='text-xl' />
-                            </div>
-
-                            <span className='text-sm'>@AspinRock1 · 26 April</span>
-                        </div>
-
-                        <img src='/tweet-3.png' className='px-[15px] py-[60px] ' />
-                    </div>
-                </div>
-            </div>
-
-            <div className='w-full flex flex-col xl:flex-row mt-[120px]'>
+            <div className='w-full flex flex-col xl:flex-row'>
                 <div>
                     <span className='text-sm'>WHAT WE DO</span>
                     <h2 className='text-[40px] my-[20px]'>AspinRock in America</h2>

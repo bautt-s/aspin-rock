@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BiPlusMedical } from 'react-icons/bi'
 
 const HelpSection: React.FC = () => {
@@ -19,12 +20,23 @@ const HelpSection: React.FC = () => {
                 </button>
             </div>
 
-            <ul className='flex-col px-[20px] pt-[15px] pb-[35px] shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] h-fit xl:ml-[120px] grow mt-[80px] xl:mt-0'>
-                <li className='border-b-[1px] border-black py-[10px]'>Read about The Coming Tools</li>
-                <li className='border-b-[1px] border-black py-[10px]'>Learn more about Tax Evaluator</li>
-                <li className='border-b-[1px] border-black py-[10px]'>Documentation on Model Evaluator</li>
-                <li className='border-b-[1px] border-black py-[10px]'>Documentation on Risk Evaluator</li>
-            </ul>
+            <div className='list-none flex-col px-[20px] pt-[15px] pb-[35px] shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)] h-fit xl:ml-[120px] grow mt-[80px] xl:mt-0'>
+                <li className='border-b-[1px] border-black py-[10px] font-[600]'>
+                    Read about The Coming Tools
+                </li>
+                
+                <li className='border-b-[1px] border-black py-[10px] hover:underline'>
+                    <Link href='/articles/e8e3a16d-30c0-4d28-a1b7-31ac9bad8d5f'>Learn more about Tax Evaluator</Link>
+                </li>
+
+                <li className='border-b-[1px] border-black py-[10px] hover:underline'>
+                    <Link href='/articles/7d7c3b0e-3099-4670-be63-31192d4a1fea'>Documentation on Model Evaluator</Link>
+                </li>
+
+                <li className='border-b-[1px] border-black py-[10px] hover:underline'>
+                    <Link href='/articles/815dab75-90fb-4b0b-a17b-3f74eeb928aa'>Documentation on Risk Evaluator</Link>
+                </li>
+            </div>
         </div>
     )
 }
