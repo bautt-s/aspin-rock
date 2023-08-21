@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { articleInterface } from "."
 import { changeNav } from "@/store/appSlice"
 import { useDispatch } from "react-redux"
+import Head from "next/head"
 
 function formatDate(date: Date) {
     const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY',
@@ -43,6 +44,10 @@ const ArticleDetail = () => {
 
     return (
         <div className="overflow-hidden">
+            <Head>
+                <title>{details?.title ? details?.title : 'AspinRock | Loading...' }</title>
+            </Head>
+
             <NavSection />
 
             <div className="flex flex-col">

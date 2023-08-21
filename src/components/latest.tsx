@@ -70,22 +70,25 @@ const LatestSection: React.FC = () => {
                 <div className='xl:ml-auto px-[20px] py-[25px] h-fit 2xl:h-fit w-full xl:w-[40%] mt-[60px] xl:mt-0 shadow-[0px_0px_10px_6px_rgba(0,0,0,0.1)]'>
                     <span className='text-sm'>READ OUR BLOG</span>
 
-                    <ul className='flex flex-col mt-[35px] gap-y-[20px]'>
-                        <li className='flex flex-row items-center'>
+                    <div className='flex flex-col mt-[35px] gap-y-[20px]'>
+                        <Link href='/articles/2ea87f9b-3b85-4a0e-9d6b-7b9d09df23f2' 
+                        className='flex flex-row items-center'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            <Link href='/letter-ceo'>Opening Statement</Link>
-                        </li>
+                            Recent Bank Crashes - what's next?
+                        </Link>
 
-                        <li className='flex flex-row items-center border-y-[1px] border-black py-[15px]'>
+                        <Link href='/articles/4efbd0cf-0261-4a06-b632-91ed23f9f95f' 
+                        className='flex flex-row items-center border-y-[1px] border-black py-[15px]'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            Recent Regulatory Developments
-                        </li>
+                            Learn how cash and liquidity strategies can help individual investors
+                        </Link>
 
-                        <li className='flex flex-row items-center'>
+                        <Link href='/articles/bd15eaeb-265b-466e-8499-d296dfb2eaf9' 
+                        className='flex flex-row items-center'>
                             <BiPlusMedical className='text-[#1DA1F2] mr-[10px]' />
-                            Embracing Transparency and Accountability
-                        </li>
-                    </ul>
+                            Quantum Computing Revolutionizing the Finance Industry
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

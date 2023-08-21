@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { BiPlusMedical } from 'react-icons/bi'
 
 const gridItems = [
@@ -8,7 +9,7 @@ const gridItems = [
         description: "Investing comes with a certain level of risk, but you don't have to navigate those risks alone. Risk management services are designed to help individual investors identify and mitigate potential risks in their investment portfolio. These services can help you protect your investments and feel confident in your financial future.",
     },
     {
-        link: '',
+        link: '/investment-management',
         title: 'Investment Advisory',
         subtitle: 'Make Informed Investment Decisions with Expert Advisory Services',
         description: 'Investing can be daunting, especially for those who are new to the market. Investment advisory services provide individual investors with guidance and information to make informed investment decisions. Advisors work with you to create an investment strategy that aligns with your goals and risk tolerance, helping you maximize returns and minimize risks.',
@@ -49,10 +50,11 @@ const FutureSection: React.FC = () => {
 
                         <p className="mt-[15px]">{item.description}</p>
 
-                        <button className="absolute bottom-0 left-0 flex flex-row items-center bg-black py-[10px] pl-[15px] pr-[35px]">
+                        <Link className="absolute bottom-0 left-0 flex flex-row items-center 
+                        bg-black py-[10px] pl-[15px] pr-[35px] group" href={item.link}>
                             <BiPlusMedical className='text-[#1DA1F2]' />
-                            <span className='text-white ml-[15px]'>{item.title}</span>
-                        </button>
+                            <span className='text-white ml-[15px] group-hover:underline'>{item.title}</span>
+                        </Link>
                     </div>
                 )}
             </div>

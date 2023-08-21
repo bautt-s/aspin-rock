@@ -60,9 +60,7 @@ const CorporatePage: React.FC = () => {
                             </h1>
 
                             <p className='max-w-[75ch] mt-[35px] mb-[40px]'>
-                                BlackRock is one of the world’s leading providers of investment, advisory and risk management solutions.
-                                We are a fiduciary to our clients. We’re investing for the future on behalf of our clients, inspiring our
-                                employees, and supporting our local communities. Watch the video to learn more.
+                                Come change the world with us!
                             </p>
 
                             <button className='flex flex-row items-center bg-white w-fit py-[15px] px-[35px] relative'>

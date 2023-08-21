@@ -17,7 +17,7 @@ export async function getStaticProps({ locale }: { locale: any }) {
     }
 }
 
-const RiskAssetPage: React.FC = () => {
+const InvestmentPage: React.FC = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -31,13 +31,13 @@ const RiskAssetPage: React.FC = () => {
     return (
         <div>
             <Head>
-                <title>AspinRock | Risks & Assets</title>
+                <title>AspinRock | Investment Management & Advisory</title>
             </Head>
 
             <NavSection />
 
             <div className="flex flex-col">
-                <img src='/risk-asset.png' className="w-full h-[400px] 2xl:h-[800px] object-cover object-top" />
+                <img src='/management-hero.png' className="w-full h-[400px] 2xl:h-[800px] object-cover object-top" />
 
                 <div className="flex flex-col px-[40px] lg:px-[80px] mx-auto mt-[40px] pb-[80px]">
                     <div className="flex flex-col mx-auto">
@@ -117,4 +117,4 @@ const RiskAssetPage: React.FC = () => {
     )
 }
 
-export default RiskAssetPage
+export default InvestmentPage

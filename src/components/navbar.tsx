@@ -29,7 +29,9 @@ const NavSection: React.FC = () => {
                     <li>
                         <Link href='/'>AspinRock</Link>
                     </li>
-                    <li>Blog</li>
+                    <li>
+                        <Link href='/articles'>Blog</Link>
+                    </li>
                 </ul>
 
                 <ul className="flex flex-row gap-[20px] xl:gap-[35px] sm:ml-auto underline">

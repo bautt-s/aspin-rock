@@ -1,12 +1,10 @@
 import { BiSolidChevronRight } from 'react-icons/bi'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const InstVision: React.FC = () => {
-    function scrollToSection() {
-    }
-
     return (
-        <div className="flex flex-col px-[40px] lg:px-[80px] py-[80px]">
+        <div className="flex flex-col px-[40px] lg:px-[80px] py-[80px]" id='learn-more'>
             <div className="flex flex-col-reverse xl:flex-row items-center justify-center gap-x-[60px]">
                 <div className="flex flex-col">
                     <h1 className='text-[40px]'>The Institutional Vision</h1>
@@ -16,18 +14,18 @@ const InstVision: React.FC = () => {
                         with unmatched investment insights and analysis across asset classes, investment strategies, and markets.
                     </p>
 
-                    <button onClick={scrollToSection}
+                    <Link href='/articles/c69fca00-26de-451e-8bec-7caeb3697f4c'
                     className='bg-black flex flex-row items-center py-[10px] w-[200px] pr-[25px]'>
                         <BiSolidChevronRight className='text-xl text-[#1DA1F2] ml-[15px]' />
                         <span className='text-white mx-auto'>Learn More</span>
-                    </button>
+                    </Link>
                 </div>
 
                 <Image src='/institutional-vision.png' height='600' width='700' alt='vision-image'
                 className='mx-auto xl:mr-0 xl:ml-auto mb-[25px] object-cover' />
             </div>
 
-            <div className='flex flex-col mt-[60px]' id='learn-more'>
+            <div className='flex flex-col mt-[60px]'>
                 <h1 className='text-3xl'>Learn More</h1>
 
                 <form className='flex flex-col mt-[40px]'>

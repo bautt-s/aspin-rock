@@ -2,6 +2,9 @@ import NavSection from '@/components/navbar'
 import FooterSection from '@/components/footer'
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { changeNav } from '@/store/appSlice'
 
 export async function getStaticProps({ locale }: { locale: any }) {
     return {
@@ -15,6 +18,16 @@ export async function getStaticProps({ locale }: { locale: any }) {
 }
 
 const ContactPage: React.FC = () => {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(changeNav('404'))
+
+        return () => {
+            dispatch(changeNav(undefined))
+        };
+    })
+
     return (
         <div>
             <Head>

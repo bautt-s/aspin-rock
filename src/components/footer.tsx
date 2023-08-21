@@ -36,7 +36,7 @@ const FooterSection: React.FC = () => {
                         <h4 className="border-b-[1px] border-white pb-[15px]">Commentary</h4>
 
                         <ul className="flex flex-col text-sm md:gap-y-[20px] mt-[25px]">
-                            <li className='hover:underline' onClick={handlePortfolio}>Portfolio management views</li>
+                            <li className='hover:underline cursor-pointer' onClick={handlePortfolio}>Portfolio management views</li>
                         </ul>
                     </div>
 

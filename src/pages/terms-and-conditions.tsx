@@ -2,6 +2,9 @@ import NavSection from '@/components/navbar'
 import FooterSection from '@/components/footer'
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { changeNav } from '@/store/appSlice'
 
 export async function getStaticProps({ locale }: { locale: any }) {
     return {
@@ -15,6 +18,16 @@ export async function getStaticProps({ locale }: { locale: any }) {
 }
 
 const TermsPage: React.FC = () => {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(changeNav('404'))
+
+        return () => {
+            dispatch(changeNav(undefined))
+        };
+    })
+
     return (
         <div>
             <Head>
@@ -203,7 +216,7 @@ const TermsPage: React.FC = () => {
                 <p>
                     The information presented on this website is not intended for distribution to, or use by, any individual
                     or entity in any jurisdiction or country where such distribution or use would be in violation of the law
-                    or regulations, or where it would require BlackRock or its affiliates to comply with any registration
+                    or regulations, or where it would require AspinRock or its affiliates to comply with any registration
                     requirements in that jurisdiction or country. Every investment product and service mentioned on this
                     website is intended to be offered solely to residents of the United States. This website should not be
                     regarded as a solicitation for or an offer of any investment product or service to any individual in any

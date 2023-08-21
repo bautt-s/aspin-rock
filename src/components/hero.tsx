@@ -2,19 +2,23 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 import { BiSolidChevronRight, BiPlusMedical } from 'react-icons/bi'
 import { useSelector } from 'react-redux'
 import { RootState } from '../store/store'
+import Link from 'next/link'
 
 const gridItemsIndividual = [
     {
+        link: '/articles/7ad5b077-d8e0-4844-9110-a324495e6e88',
         subtitle: 'INSTITUTIONAL/PROFESSIONAL CLIENTS',
         title: 'Unleashing the Power of Innovation: How AspinRock is Disrupting the Financial Industry',
         cta: 'Listen to the talk'
     },
     {
+        link: '/articles/4efbd0cf-0261-4a06-b632-91ed23f9f95f',
         subtitle: 'INDIVIDUALS',
         title: 'Learn how cash and liquidity strategies can help individual investors',
         cta: 'Learn More'
     },
     {
+        link: '/articles/2ea87f9b-3b85-4a0e-9d6b-7b9d09df23f2',
         subtitle: 'WEEKLY COMMENTARY',
         title: 'Recent bank crashes - what’s next?',
         cta: 'Read our insights'
@@ -23,18 +27,21 @@ const gridItemsIndividual = [
 
 const gridItemsAdvisor = [
     {
-        subtitle: '2023 INVESTMENT TOOLS',
-        title: 'Yields are back – time to reset and reassess portfolios.',
-        cta: 'Find investment tools and resources'
+        link: '/articles/83c9ab83-45db-498e-90c6-68dad27cb85c',
+        subtitle: 'THE RISE OF REMOTE WORK',
+        title: 'Navigating the Changing Landscape of Work-Life Balance.',
+        cta: 'Read the latest on remote work'
     },
     {
-        subtitle: 'MACRO OUTLOOK: FIXED INCOME',
-        title: 'Learn why 2023 could be a strong year for Fixed Income performance.',
-        cta: 'Read the latest on Fixed Income'
+        link: '/articles/9ab01e3b-b94b-4d32-aa02-da047850824f',
+        subtitle: 'DIGITAL TRANSFORMATION OF BANKING',
+        title: 'Exploring the Benefits and Considerations.',
+        cta: 'Learn more about the changes'
     },
     {
-        subtitle: 'Q2 2023 EQUITY MARKET OUTLOOK',
-        title: 'Learn about what the future has to offer.',
+        link: '/articles/e30de59b-97fa-41a6-b1ef-f88ef26d1145',
+        subtitle: 'THE POWER OF LONG-TERM INVESTING',
+        title: 'Building Wealth and Securing Financial Futures.',
         cta: 'Explore the outlook'
     }
 ]
@@ -74,15 +81,16 @@ const HeroSection: React.FC = () => {
                         Check out the article below to see what this means for you.
                     </p>}
 
-                    <div className='flex flex-row items-center mt-[60px]'>
+                    <Link className='flex flex-row items-center mt-[60px] group' 
+                    href={view !== 'individual' ? '/articles/8f89ffa4-8ba8-4545-bc18-00cd8ae40d6d' : '/articles/c69fca00-26de-451e-8bec-7caeb3697f4c'}>
                         <BiSolidChevronRight className='text-[#1DA1F2] text-2xl' />
-                        <span className='font-[500] ml-[5px]'>
+                        <span className='font-[500] ml-[5px] group-hover:underline'>
                             {view === 'individual'
                                 ? 'Read more about our vision'
                                 : 'Read more about our ideas'
                             }
                         </span>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className={`hidden lg:flex grow w-1/2 ${view === 'individual' ? 'hero-img' : 'hero-img-2'}`}></div>
@@ -92,7 +100,7 @@ const HeroSection: React.FC = () => {
                 <div className='bg-[#1DA1F2] lg:h-[300px] xl:h-[240px] w-screen grid lg:grid-cols-3 
                 py-[40px] lg:py-0 lg:px-[20px] lg:items-center gap-y-[40px] lg:gap-y-0'>
                     {gridItemsIndividual.map((item, index) =>
-                        <div key={index} className={`flex flex-col gap-y-[25px] mx-[60px] lg:mx-auto xl:mx-0 xl:px-[60px]
+                        <Link href={item.link} key={index} className={`flex flex-col gap-y-[25px] mx-[60px] lg:mx-auto xl:mx-0 xl:px-[60px] group
                         ${index === 1 && 'border-x-black xl:border-x-[1px] border-y-black border-y-[1px] lg:border-y-0 py-[15px] lg:py-0'}`}>
                             <span className='text-sm set-underline-black'>{item.subtitle}</span>
                             <h3 className='text-xl lg:text-base xl:text-lg 2xl:text-xl max-w-[40ch] lg:max-w-[30ch] xl:max-w-[40ch] lg:h-[65px] xl:h-[55px]'>
@@ -101,15 +109,15 @@ const HeroSection: React.FC = () => {
 
                             <button className='flex flex-row items-center gap-x-[15px] xl:mt-[25px] 2xl:mt-0'>
                                 <BiPlusMedical />
-                                <span>{item.cta}</span>
+                                <span className='group-hover:underline'>{item.cta}</span>
                             </button>
-                        </div>
+                        </Link>
                     )}
                 </div>
                 : <div className='bg-[#1DA1F2] lg:h-[300px] xl:h-[240px] w-screen grid lg:grid-cols-3 
                 py-[40px] lg:py-0 lg:px-[20px] lg:items-center gap-y-[40px] lg:gap-y-0'>
                     {gridItemsAdvisor.map((item, index) =>
-                        <div key={index} className={`flex flex-col gap-y-[25px] mx-[60px] lg:mx-auto xl:mx-0 xl:px-[60px]
+                        <Link href={item.link} key={index} className={`flex flex-col gap-y-[25px] mx-[60px] lg:mx-auto xl:mx-0 xl:px-[60px] group
                         ${index === 1 && 'border-x-black xl:border-x-[1px] border-y-black border-y-[1px] lg:border-y-0 py-[15px] lg:py-0'}`}>
                             <span className='text-sm set-underline-black'>{item.subtitle}</span>
                             <h3 className='text-xl lg:text-base xl:text-lg 2xl:text-xl max-w-[40ch] lg:max-w-[30ch] xl:max-w-[40ch] lg:h-[65px] xl:h-[55px]'>
@@ -118,9 +126,9 @@ const HeroSection: React.FC = () => {
 
                             <button className='flex flex-row items-center gap-x-[15px] xl:mt-[25px] 2xl:mt-0'>
                                 <BiPlusMedical />
-                                <span>{item.cta}</span>
+                                <span className='group-hover:underline'>{item.cta}</span>
                             </button>
-                        </div>
+                        </Link>
                     )}
                 </div>
             }
