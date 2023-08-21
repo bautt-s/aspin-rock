@@ -17,7 +17,7 @@ export interface articleInterface {
 
 const ArticlesPage: React.FC = () => {
     const [search, setSearch] = useState('')
-    const [articles, setArticles] = useState<articleInterface[] | undefined>(undefined)
+    const [articles, setArticles] = useState<articleInterface[] | undefined | { msg: string }>(undefined)
 
     const getArticles = async () => {
         const response = await fetch(`/api/articles?title=${search}`, {
@@ -68,7 +68,7 @@ const ArticlesPage: React.FC = () => {
                             </form>
                         }
 
-                        {articles.length &&
+                        {Array.isArray(articles) && articles.length &&
                             <Link href={`/articles/${articles[0]?.id}`}
                             className="flex flex-col md:flex-row md:items-center gap-x-[40px] mt-[40px] group">
                                 <img src={articles[0]?.image} className="w-auto h-[300px] object-cover" />
@@ -86,7 +86,7 @@ const ArticlesPage: React.FC = () => {
                             </Link>
                         }
 
-                        {articles?.length &&
+                        {Array.isArray(articles) && articles?.length &&
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-x-[25px] gap-y-[50px] mt-[60px] md:mt-[40px]">
                                 {articles.slice(1).map((item: articleInterface, index) =>
                                     <Link key={index} href={`/articles/${item.id}`}
@@ -108,7 +108,7 @@ const ArticlesPage: React.FC = () => {
                             </div>
                         }
 
-                        {(articles?.msg) &&
+                        {(!Array.isArray(articles) && articles?.msg) &&
                             <div className="w-full flex justify-center items-center py-[120px]">
                                 <span className="text-2xl">No articles found.</span>
                             </div>

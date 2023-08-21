@@ -17,7 +17,7 @@ export interface updateInterface {
 
 const UpdatesPage: React.FC = () => {
     const [search, setSearch] = useState('')
-    const [updates, setUpdates] = useState<updateInterface[] | undefined>(undefined)
+    const [updates, setUpdates] = useState<updateInterface[] | undefined | { msg: string }>(undefined)
 
     const getUpdates = async () => {
         const response = await fetch(`/api/updates?title=${search}`, {
@@ -68,7 +68,7 @@ const UpdatesPage: React.FC = () => {
                             </form>
                         }
 
-                        {updates?.length &&
+                        {Array.isArray(updates) && updates?.length &&
                             <Link href={`/updates/${updates[0]?.id}`}
                                 className="flex flex-col md:flex-row md:items-center gap-x-[40px] mt-[40px] group">
                                 <img src={updates[0]?.image} className="w-auto h-[300px] object-cover" />
@@ -86,7 +86,7 @@ const UpdatesPage: React.FC = () => {
                             </Link>
                         }
 
-                        {updates?.length &&
+                        {Array.isArray(updates) && updates?.length &&
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-x-[25px] gap-y-[50px] mt-[60px] md:mt-[40px]">
                                 {updates.slice(1).map((item: updateInterface, index) =>
                                     <Link key={index} href={`/updates/${item.id}`}
@@ -108,7 +108,7 @@ const UpdatesPage: React.FC = () => {
                             </div>
                         }
 
-                        {(updates?.msg) &&
+                        {(!Array.isArray(updates) && updates?.msg) &&
                             <div className="w-full flex justify-center items-center py-[120px]">
                                 <span className="text-2xl">No updates found.</span>
                             </div>
