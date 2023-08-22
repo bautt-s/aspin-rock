@@ -45,7 +45,7 @@ const ContinuityPage: React.FC = () => {
                     <p className="max-w-[70ch]">
                         AspinRock Inc. is committed to providing our customers with uninterrupted service. We understand that a significant business disruption (SBD) can have a major impact on our customers, and we are committed to doing everything we can to minimize the impact.
                         <br /><br />
-                        Our SBD plan is designed to protect our customers' assets, continue to provide services, and communicate with our customers in the event of an SBD. Our plan is compliant with all applicable laws and regulations, including the North Carolina Continuity of Operations (COOP) Plan Act.
+                        Our SBD plan is designed to protect our customers&apos; assets, continue to provide services, and communicate with our customers in the event of an SBD. Our plan is compliant with all applicable laws and regulations, including the North Carolina Continuity of Operations (COOP) Plan Act.
                         <br /><br />
                         Our SBD plan includes the following:
                         <br /><br />
