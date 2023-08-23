@@ -41,7 +41,7 @@ const PrivacyPage: React.FC = () => {
                 </div>
 
                 <div className='bg-white px-[40px] lg:px-[80px] pb-[140px] pt-[40px]'>
-                    <p>This website does not collect cookies or personal data.</p>
+                    <p>Google Analytics collect cookies on behalf of us solely to track website data such as usage and security.</p>
                 </div>
 
             <FooterSection />

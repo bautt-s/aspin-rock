@@ -1,7 +1,14 @@
 import { BiPlusMedical } from 'react-icons/bi'
 import Link from 'next/link' 
+import { useRouter } from 'next/router'
 
 const LatestSection: React.FC = () => {
+    const router = useRouter()
+
+    const handlePortfolio = () => {
+        router.push('/corporate#who')
+    }
+
     return (
         <div className="px-[40px] lg:px-[80px] py-[80px] bg-white flex flex-col">
             <div className='w-full flex flex-col xl:flex-row'>
@@ -18,7 +25,7 @@ const LatestSection: React.FC = () => {
 
                     <button className='flex flex-row mt-[20px] items-center gap-x-[10px]'>
                         <BiPlusMedical className='text-[#1DA1F2]' />
-                        <span>Who we serve</span>
+                        <span className='hover:underline' onClick={handlePortfolio}>Who we serve</span>
                     </button>
                 </div>
 

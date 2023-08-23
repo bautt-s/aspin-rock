@@ -1,12 +1,14 @@
 import { changeView } from '@/store/appSlice'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useDispatch } from 'react-redux'
 
 const FooterSection: React.FC = () => {
     const router = useRouter()
+    const dispatch = useDispatch()
 
     const handlePortfolio = () => {
-        changeView('advisor')
+        dispatch(changeView('advisor'))
         router.push('/advisor#portfolio')
     }
 

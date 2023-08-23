@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const CookiesPopup: React.FC<{ popup: string, handleClose: Function }> = (props) => {
     const { popup, handleClose } = props
 
@@ -17,7 +19,7 @@ const CookiesPopup: React.FC<{ popup: string, handleClose: Function }> = (props)
 
                 <button className="bg-white hover:bg-[#e4e4e4] transition-all duration-300 
                 text-black font-[600] mt-[40px] py-[7px] rounded-lg">
-                    Privacy
+                    <Link href='/privacy' onClick={() => handleClose()}>Privacy</Link>
                 </button>
 
                 <button className="bg-[#1DA1F3] hover:bg-[#2f8bc5] transition-all duration-300 

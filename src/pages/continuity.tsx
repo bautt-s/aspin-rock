@@ -55,14 +55,7 @@ const ContinuityPage: React.FC = () => {
                         A communication plan that will keep our customers informed about the status of our services during an SBD. Our communication plan includes a list of contact methods for our customers, as well as procedures for communicating with our customers during an SBD.
                         We regularly test our SBD plan to ensure that it is effective. We also update our plan as needed to reflect changes in our business.
                         <br /><br />
-                        If you have any questions about our SBD plan, please contact us at [email protected]
-                        <br /><br />
-                        Here are some additional things to keep in mind about continuity disclosure in North Carolina:
-                        <br /><br />
-                        The North Carolina COOP Plan Act requires all businesses that provide essential services to have a SBD plan in place.
-                        The SBD plan must be reviewed and updated annually.
-                        The SBD plan must be made available to the public upon request.
-                        By having a comprehensive and compliant SBD plan in place, AspinRock Inc. can help to protect its customers and its business in the event of a significant business disruption.
+                        If you have any questions about our SBD plan, please contact us at compliance@aspinrock.com
                     </p>
                 </div>
             </div>

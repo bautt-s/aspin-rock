@@ -53,7 +53,9 @@ const HeroSection: React.FC = () => {
         <div className="w-full">
             <div className="w-full bg-[#1DA1F2] h-[48px] flex flex-row items-center px-[20px] md:px-[40px] lg:px-[80px] justify-center md:justify-normal">
                 <FaMapMarkerAlt className='bg-white rounded-full p-[5px] text-4xl mr-[10px]' />
-                <span>Updates on our grand opening.</span>
+                <Link href='/updates/d50ba5d2-b3ae-47c7-a98c-0374b3742f71' className='hover:underline'>
+                    Updates on our grand opening.
+                </Link>
             </div>
 
             <section className='flex flex-row'>
@@ -82,7 +84,7 @@ const HeroSection: React.FC = () => {
                     </p>}
 
                     <Link className='flex flex-row items-center mt-[60px] group' 
-                    href={view !== 'individual' ? '/articles/8f89ffa4-8ba8-4545-bc18-00cd8ae40d6d' : '/articles/c69fca00-26de-451e-8bec-7caeb3697f4c'}>
+                    href={view === 'individual' ? '/articles/b5577a68-3c5b-4f36-a2a5-30fa1a202d4a' : '/articles/8f89ffa4-8ba8-4545-bc18-00cd8ae40d6d'}>
                         <BiSolidChevronRight className='text-[#1DA1F2] text-2xl' />
                         <span className='font-[500] ml-[5px] group-hover:underline'>
                             {view === 'individual'

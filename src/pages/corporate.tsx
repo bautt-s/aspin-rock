@@ -8,6 +8,7 @@ import { BiSolidChevronRight } from 'react-icons/bi'
 import Image from 'next/image'
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Link from 'next/link'
 
 export async function getStaticProps({ locale }: { locale: any }) {
     return {
@@ -49,7 +50,9 @@ const CorporatePage: React.FC = () => {
                 <div className='flex flex-col'>
                     <div className="w-full bg-[#1DA1F2] h-[48px] flex flex-row items-center px-[20px] md:px-[40px] lg:px-[80px] justify-center md:justify-normal">
                         <FaMapMarkerAlt className='bg-white rounded-full p-[5px] text-4xl mr-[10px]' />
-                        <span>Updates on our grand opening.</span>
+                        <Link href='/updates/d50ba5d2-b3ae-47c7-a98c-0374b3742f71' className='hover:underline'>
+                            Updates on our grand opening.
+                        </Link>
                     </div>
 
                     <div className='flex flex-col-reverse lg:flex-row bg-black px-[40px] lg:px-[80px] lg:items-center py-[80px] lg:gap-x-[60px] 2xl:gap-x-0'>
@@ -69,10 +72,10 @@ const CorporatePage: React.FC = () => {
                             </button>
                         </div>
 
-                        <Image src='/hero-corporate.png' alt='corporate-hero' height={400} width={550}  
-                        className='lg:ml-auto md:h-[300px] lg:h-[500px] lg:w-[400px] xl:w-auto xl:h-auto object-cover object-center' />
+                        <Image src='/hero-corporate.png' alt='corporate-hero' height={400} width={550}
+                            className='lg:ml-auto md:h-[300px] lg:h-[500px] lg:w-[400px] xl:w-auto xl:h-auto object-cover object-center' />
 
-                        
+
                     </div>
 
                     <div className='pt-[40px] px-[40px] lg:px-[80px] pb-[240px]' id='mission'>
@@ -85,9 +88,9 @@ const CorporatePage: React.FC = () => {
 
                         <div className='flex flex-col mt-[45px] gap-y-[80px] xl:gap-y-[25px]'>
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
-                            <Image src='/corporate-1.png' alt='corporate-image' width={700} height={400}
-                                className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
-                                
+                                <Image src='/corporate-1.png' alt='corporate-image' width={700} height={400}
+                                    className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
                                     <h3 className='text-[40px]'>Financial safety:</h3>
@@ -103,13 +106,13 @@ const CorporatePage: React.FC = () => {
 
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
                                 <Image src='/corporate-2.png' alt='corporate-image' width={700} height={400}
-                                className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+                                    className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
                                     <h3 className='text-[40px]'>Investments for all:</h3>
 
                                     <p className='max-w-[70ch] mb-[25px] mt-[15px]'>
-                                        We bring people of all backgrounds together in investing. 
+                                        We bring people of all backgrounds together in investing.
                                     </p>
 
                                     <button className='flex flex-row items-center'>
@@ -121,14 +124,14 @@ const CorporatePage: React.FC = () => {
 
                             <div className='flex flex-col xl:flex-row xl:items-center gap-x-[120px]'>
                                 <Image src='/corporate-3.png' alt='corporate-image' width={700} height={400}
-                                className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
+                                    className='w-[600px] 2xl:w-[700px] h-[400px] object-cover' />
 
                                 <div className='flex flex-col mt-[35px] xl:mt-0'>
                                     <h3 className='text-[40px]'>Sustainability:</h3>
 
                                     <p className='max-w-[70ch] mt-[15px] mb-[25px]'>
-                                        We advance sustainable investing because our conviction is it delivers better outcomes 
-                                        for our investors. As the world moves towards a net zero economy, how can we help 
+                                        We advance sustainable investing because our conviction is it delivers better outcomes
+                                        for our investors. As the world moves towards a net zero economy, how can we help
                                         investors prepare for the transition?
                                     </p>
 
@@ -140,7 +143,7 @@ const CorporatePage: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className='flex flex-col mt-[120px] md:mt-[240px] border-t border-black pt-[40px] md:pt-[80px] pb-[40px]'>
+                        <div id='who' className='flex flex-col mt-[120px] md:mt-[240px] border-t border-black pt-[40px] md:pt-[80px] pb-[40px]'>
                             <h2 className='text-[32px]'>Who we serve</h2>
 
                             <div className='flex flex-col md:flex-row mt-[40px] md:mt-[60px] lg:px-[40px] gap-x-[45px] gap-y-[25px]'>
@@ -188,7 +191,7 @@ const CorporatePage: React.FC = () => {
                                     <span className='text-xs'>INCLUSION</span>
 
                                     <h4 className='text-2xl mt-[10px] lg:max-w-[25ch]'>
-                                        Fostering an environment where everyone feels like they belong. 
+                                        Fostering an environment where everyone feels like they belong.
                                     </h4>
                                 </div>
                             </div>
