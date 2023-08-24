@@ -6,6 +6,7 @@ import type { AppProps } from 'next/app'
 import { Metadata } from 'next'
 import Head from 'next/head'
 import CookiesPopup from '@/components/cookies'
+import { Analytics } from '@vercel/analytics/react';
 import { useEffect, useState } from 'react'
 
 export const metadata: Metadata = {
@@ -40,9 +41,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<link rel="icon" href="/favicon/favicon.ico" />
 			</Head>
 
-			{popup === 'true' && <CookiesPopup popup={popup} handleClose={handleClose} />}
-
 			<Component {...pageProps} />
+			<Analytics />
 		</Provider>
 	)
 }
