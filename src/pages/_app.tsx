@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		window.localStorage.setItem('COOKIE_POPUP', 'false')
 		setPopup('false')
 	}
-	
+
 	useEffect(() => {
 		let cookiePopup
 
@@ -35,15 +35,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 	})
 
 	return (
-		<Provider store={store}>
-			<Head>
-				<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-				<link rel="icon" href="/favicon/favicon.ico" />
-			</Head>
+		<>
+			<Provider store={store}>
+				<Head>
+					<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+					<link rel="icon" href="/favicon/favicon.ico" />
+				</Head>
 
-			<Component {...pageProps} />
+				<Component {...pageProps} />
+			</Provider>
 			<Analytics />
-		</Provider>
+		</>
 	)
 }
 
