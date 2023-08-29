@@ -49,7 +49,7 @@ const ContactPage: React.FC = () => {
                         <input className='bg-white border-b border-b-black' placeholder='First name *' />
                         <input className='bg-white border-b border-b-black' placeholder='Last name *' />
                         <input className='bg-white border-b border-b-black' placeholder='Organization name *' />
-                        <input className='bg-white border-b border-b-black' placeholder='Organization *' />
+                        <input className='bg-white border-b border-b-black' placeholder='Message *' />
                         <input className='bg-white border-b border-b-black' placeholder='Title *' />
                         <input className='bg-white border-b border-b-black' placeholder='Business email *' />
                         <input className='bg-white border-b border-b-black' placeholder='Country  *' />
